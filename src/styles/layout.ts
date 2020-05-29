@@ -4,8 +4,7 @@ const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     rootLg: {
       flexGrow: 1,
-      height: "100%",
-      padding: "0px 150px",
+      padding: "0 150px 200px 150px",
       minHeight: "100vh",
       maxWidth: "1600px",
       margin: "0 auto",
@@ -33,22 +32,32 @@ const useStyles = makeStyles((theme: Theme) =>
       alignItems: "center",
       fontSize: "0.8rem",
     },
-    mainIntro: {
+    intro: {
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
       flexDirection: "column",
-      padding: "0rem 0 10rem 0",
       textAlign: "center",
       minHeight: "100vh",
-      maxWidth: "1000px",
+      paddingBottom: "6rem",
+      // maxWidth: "1000px",
     },
-    mainAbout: {
+    about: {
       display: "flex",
       // minHeight: "100vh",
-      maxWidth: "1000px",
-      // padding: "0 5rem 10rem 5rem",
       flexDirection: "row",
+      padding: "0 0 150px 0 !important",
+    },
+    work: {
+      display: "flex",
+      flexDirection: "column",
+      padding: "150px 0",
+      // minHeight: "100vh",
+    },
+    project: {
+      display: "flex",
+      flexDirection: "column",
+      padding: "150px 0",
     },
   })
 );
