@@ -2,13 +2,17 @@ import React from "react";
 import Button from "@material-ui/core/Button";
 import { useStyles } from "@styles/index";
 
-const CustomBtn = () => {
-  const classes = useStyles();
-
+const CustomBtn = ({ id, isClicked, children }: any) => {
+  // console.log(event);
   return (
-    <div className={classes.btn}>
-      <Button variant="contained">Default</Button>
-    </div>
+    <Button
+      id={id}
+      onClick={isClicked}
+      className="btn_default_style"
+      variant="contained"
+    >
+      {children}
+    </Button>
   );
 };
 
