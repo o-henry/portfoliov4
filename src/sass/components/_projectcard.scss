@@ -1,13 +1,13 @@
 .projectcard_layout {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   background-color: black;
   box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
   border-radius: 3px;
   padding: 3rem 2.5rem;
   margin: 0.2rem;
   // width: 100%;
+  height: 55%;
 }
 
 .projectcard_header {
@@ -19,9 +19,12 @@
 .projectcard_body_style {
   //   font-family: $scorelight !important;
   color: white;
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.2rem;
 }
 
 .projectcard_body_stack {
-  padding: 1rem 0 0 0;
+  // padding: 1rem 0 0 0;
   color: gray;
 }

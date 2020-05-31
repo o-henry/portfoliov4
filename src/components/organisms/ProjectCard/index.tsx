@@ -8,7 +8,8 @@ import GridListTile from "@material-ui/core/GridListTile";
 const projectList = [
   {
     name: "Papaya",
-    description: "리액트 와 Mapbox를 기반으로 한, 실내 측위 서비스 SPA 입니다.",
+    description:
+      "리액트 기반 반응형 SPA 로, Mapbox를 기반으로 한, 실내 측위 서비스 입니다. Apollo Subscription을 통한 실시간 위치 공유기능이 추가되었습니다.",
     stack: "React Mapbox Graphql TS AWS",
   },
   {
@@ -23,20 +24,41 @@ const projectList = [
       "인스타그램 장소, 날짜태그 데이터를 크롤링 및 가공 하여 사용하는 해시태그 데이터 기반 어플리케이션 개발중 입니다.",
     stack: "React, Express, Expo, MongoDB, Puppeteer",
   },
+  {
+    name: "LocalSNS",
+    description:
+      "인스타그램 장소, 날짜태그 데이터를 크롤링 및 가공 하여 사용하는 해시태그 데이터 기반 어플리케이션 개발중 입니다.",
+    stack: "React, Express, Expo, MongoDB, Puppeteer",
+  },
+  {
+    name: "LocalSNS",
+    description:
+      "인스타그램 장소, 날짜태그 데이터를 크롤링 및 가공 하여 사용하는 해시태그 데이터 기반 어플리케이션 개발중 입니다.",
+    stack: "React, Express, Expo, MongoDB, Puppeteer",
+  },
+  {
+    name: "LocalSNS",
+    description:
+      "인스타그램 장소, 날짜태그 데이터를 크롤링 및 가공 하여 사용하는 해시태그 데이터 기반 어플리케이션 개발중 입니다.",
+    stack: "React, Express, Expo, MongoDB, Puppeteer",
+  },
 ];
 
-const ProjectCard = () => {
+const ProjectCard = ({ showMore }: any) => {
   const classes = useStyles();
   const width = useWidth();
+  const numberOfItems = showMore ? projectList.length : 3;
 
   return (
     <>
       <GridList cellHeight={150} className={classes.gridList}>
-        {projectList.map((project) => {
+        {projectList.slice(0, numberOfItems).map((project) => {
           return (
             <GridListTile
-              rows={width == "xs" ? 1.8 : 3}
-              cols={width == "xs" ? 2 : 0.6}
+              rows={width == "xs" ? 2.3 : 2.4}
+              cols={
+                width == "xs" ? 2 : width == "sm" || width == "md" ? 0.9 : 0.6
+              }
             >
               <div className="projectcard_layout">
                 <div className="projectcard_header">

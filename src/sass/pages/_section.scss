@@ -3,7 +3,26 @@
   flex-wrap: wrap;
   justify-content: space-around;
   overflow: hidden;
-  background: yellow;
   flex-direction: column;
   min-width: 100%;
+  padding: 150px 0;
+  height: auto;
+  #project_title {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+  }
+}
+
+#contact {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+
+  #contact_title {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+  }
 }

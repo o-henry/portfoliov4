@@ -56,7 +56,7 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     gridList: {
       width: "100%",
-      height: "100vh",
+      height: "auto",
       justifyContent: "center",
     },
   })
