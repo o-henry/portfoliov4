@@ -25,11 +25,17 @@ const Transition = React.forwardRef(function Transition(
 
 const pdf = require("../../../ChanHaengLee.pdf");
 
-const CustomMenu = ({ moveToAbout, moveToExp, moveToContact }: any) => {
+const CustomMenu = ({
+  moveToAbout,
+  moveToExp,
+  moveToWork,
+  moveToContact,
+}: any) => {
   const classes = useStyles();
   const [open, setOpen] = useState(false);
 
   const handleScroll = (e: any) => {
+    console.log(e, e.target.id);
     if (e.target.id == "about" && moveToAbout.current) {
       moveToAbout.current.scrollIntoView({
         behavior: "smooth",
@@ -37,6 +43,16 @@ const CustomMenu = ({ moveToAbout, moveToExp, moveToContact }: any) => {
       });
     } else if (e.target.id == "exp" && moveToExp.current) {
       moveToExp.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    } else if (e.target.id == "btn_project" && moveToWork.current) {
+      moveToWork.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    } else if (e.target.id == "btn_contact" && moveToContact.current) {
+      moveToContact.current.scrollIntoView({
         behavior: "smooth",
         block: "start",
       });
@@ -63,7 +79,12 @@ const CustomMenu = ({ moveToAbout, moveToExp, moveToContact }: any) => {
               <button id="exp" onClick={handleScroll}>
                 Experience
               </button>
-              <div>Contact</div>
+              <button id="btn_project" onClick={handleScroll}>
+                Project
+              </button>
+              <button id="btn_contact" onClick={handleScroll}>
+                Contact
+              </button>
               <a href={pdf} target="_blank">
                 <CustomBtn>{"RESUME"}</CustomBtn>
               </a>
@@ -103,6 +124,12 @@ const CustomMenu = ({ moveToAbout, moveToExp, moveToContact }: any) => {
                       <ListItemText
                         className="listItem_position"
                         primary="Experience"
+                      />
+                    </ListItem>
+                    <ListItem button>
+                      <ListItemText
+                        className="listItem_position"
+                        primary="Project"
                       />
                     </ListItem>
                     <ListItem button>

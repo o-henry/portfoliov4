@@ -6,7 +6,12 @@ import { profile } from "@static/index";
 import Grid from "@material-ui/core/Grid";
 import Hidden from "@material-ui/core/Hidden";
 
-const MainTemplate = ({ moveToAbout, moveToExp, moveToContact }: any) => {
+const MainTemplate = ({
+  moveToAbout,
+  moveToExp,
+  moveToWork,
+  moveToContact,
+}: any) => {
   const classes = useStyles();
   const width = useWidth();
   const [showMore, setShowMore] = useState(false);
@@ -102,7 +107,8 @@ const MainTemplate = ({ moveToAbout, moveToExp, moveToContact }: any) => {
             </p>
           </Grid>
         </section>
-        <section id="project">
+
+        <section ref={moveToWork} id="project">
           <div id="project_title">
             <h2>My Project</h2>
           </div>
@@ -112,7 +118,7 @@ const MainTemplate = ({ moveToAbout, moveToExp, moveToContact }: any) => {
           </div>
         </section>
 
-        <Grid className={classes.contact} item xs={12}>
+        <Grid ref={moveToContact} className={classes.contact} item xs={12}>
           <section id="cotact">
             <div id="contact_title">
               <h2>Get In Touch</h2>

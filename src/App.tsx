@@ -6,6 +6,7 @@ import { Route, Switch } from "react-router-dom";
 function App() {
   const moveToAbout = useRef();
   const moveToExp = useRef();
+  const moveToWork = useRef();
   const moveToContact = useRef();
 
   return (
@@ -15,11 +16,13 @@ function App() {
           <CustomMenu
             moveToAbout={moveToAbout}
             moveToExp={moveToExp}
+            moveToWork={moveToWork}
             moveToContact={moveToContact}
           />
           <Main
             moveToAbout={moveToAbout}
             moveToExp={moveToExp}
+            moveToWork={moveToWork}
             moveToContact={moveToContact}
           />
         </Route>
