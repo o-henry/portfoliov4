@@ -5,13 +5,23 @@ import { Route, Switch } from "react-router-dom";
 
 function App() {
   const moveToAbout = useRef();
+  const moveToExp = useRef();
+  const moveToContact = useRef();
 
   return (
     <>
       <Switch>
         <Route exact path="/">
-          <CustomMenu moveToAbout={moveToAbout} />
-          <Main moveToAbout={moveToAbout} />
+          <CustomMenu
+            moveToAbout={moveToAbout}
+            moveToExp={moveToExp}
+            moveToContact={moveToContact}
+          />
+          <Main
+            moveToAbout={moveToAbout}
+            moveToExp={moveToExp}
+            moveToContact={moveToContact}
+          />
         </Route>
         <Route path="">
           <NotFound header={"page not found"} />

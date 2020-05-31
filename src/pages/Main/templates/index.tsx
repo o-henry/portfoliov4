@@ -6,7 +6,7 @@ import { profile } from "@static/index";
 import Grid from "@material-ui/core/Grid";
 import Hidden from "@material-ui/core/Hidden";
 
-const MainTemplate = ({ moveToAbout }: any) => {
+const MainTemplate = ({ moveToAbout, moveToExp, moveToContact }: any) => {
   const classes = useStyles();
   const width = useWidth();
   const [showMore, setShowMore] = useState(false);
@@ -27,7 +27,6 @@ const MainTemplate = ({ moveToAbout }: any) => {
     window.addEventListener("scroll", onScroll);
   }, [scrollTop]);
 
-  console.log("aaaa", moveToAbout);
   return (
     <div
       className={
@@ -64,13 +63,10 @@ const MainTemplate = ({ moveToAbout }: any) => {
           </Grid>
         </section>
 
-        <section id="about">
+        <section ref={moveToAbout} id="about">
           <Grid className={classes.about} item xs={12}>
             <Grid item xs={12} sm={6} md={6} xl={6} lg={6}>
-              <h2 id="about_header" ref={moveToAbout}>
-                About, Me
-              </h2>
-
+              <h2 id="about_header">About, Me</h2>
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
@@ -89,9 +85,9 @@ const MainTemplate = ({ moveToAbout }: any) => {
           </Grid>
         </section>
 
-        <section id="work">
+        <section ref={moveToExp} id="work">
           <Grid className={classes.work} item xs={12}>
-            <h2>Where I've Worked</h2>
+            <h2>Where I've Worked & Experienced</h2>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text

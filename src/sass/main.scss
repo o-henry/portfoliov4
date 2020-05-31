@@ -190,6 +190,12 @@ a:link {
   text-decoration: none;
 }
 
+button {
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
 // th,
 // td {
 //   -ms-overflow-style: none !important; // IE에서 스크롤바 감춤

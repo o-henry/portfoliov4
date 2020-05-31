@@ -39,14 +39,14 @@ const useStyles = makeStyles((theme: Theme) =>
       flexDirection: "column",
       textAlign: "center",
       minHeight: "100vh",
-      paddingBottom: "10rem",
+      paddingBottom: "5rem",
       // maxWidth: "1000px",
     },
     about: {
       display: "flex",
       // minHeight: "100vh",
       flexDirection: "row",
-      padding: "0 0 150px 0 !important",
+      padding: "150px 0 150px 0 !important",
     },
     work: {
       display: "flex",

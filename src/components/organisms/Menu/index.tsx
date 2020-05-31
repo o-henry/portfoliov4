@@ -25,13 +25,18 @@ const Transition = React.forwardRef(function Transition(
 
 const pdf = require("../../../ChanHaengLee.pdf");
 
-const CustomMenu = ({ moveToAbout }: any) => {
+const CustomMenu = ({ moveToAbout, moveToExp, moveToContact }: any) => {
   const classes = useStyles();
   const [open, setOpen] = useState(false);
 
   const handleScroll = (e: any) => {
-    if (moveToAbout.current) {
+    if (e.target.id == "about" && moveToAbout.current) {
       moveToAbout.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    } else if (e.target.id == "exp" && moveToExp.current) {
+      moveToExp.current.scrollIntoView({
         behavior: "smooth",
         block: "start",
       });
@@ -52,9 +57,12 @@ const CustomMenu = ({ moveToAbout }: any) => {
         <Grid item xs={12}>
           <Hidden only={["xs", "sm"]}>
             <div className="menu_btn_layout wide">
-              <button onClick={handleScroll}>About</button>
-              <div>Experience</div>
-              <div>Work</div>
+              <button id="about" onClick={handleScroll}>
+                About
+              </button>
+              <button id="exp" onClick={handleScroll}>
+                Experience
+              </button>
               <div>Contact</div>
               <a href={pdf} target="_blank">
                 <CustomBtn>{"RESUME"}</CustomBtn>
@@ -95,12 +103,6 @@ const CustomMenu = ({ moveToAbout }: any) => {
                       <ListItemText
                         className="listItem_position"
                         primary="Experience"
-                      />
-                    </ListItem>
-                    <ListItem button>
-                      <ListItemText
-                        className="listItem_position"
-                        primary="Work"
                       />
                     </ListItem>
                     <ListItem button>
