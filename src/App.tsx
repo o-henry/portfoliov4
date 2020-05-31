@@ -1,12 +1,20 @@
 import React from "react";
-import { Main } from "@pages/index";
+import { Main, NotFound } from "@pages/index";
 import { CustomMenu } from "@components/index";
+import { Route, Switch } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <CustomMenu />
-      <Main />
+      <Switch>
+        <Route exact path="/">
+          <CustomMenu />
+          <Main />
+        </Route>
+        <Route path="">
+          <NotFound header={"page not found"} />
+        </Route>
+      </Switch>
     </>
   );
 }

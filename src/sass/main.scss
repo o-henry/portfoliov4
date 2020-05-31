@@ -185,6 +185,11 @@ h3 {
 p {
   padding-bottom: 2rem !important;
 }
+
+a:link {
+  text-decoration: none;
+}
+
 // th,
 // td {
 //   -ms-overflow-style: none !important; // IE에서 스크롤바 감춤
@@ -212,4 +217,4 @@ p {
 @import "common/button", "common/img";
 
 /* pages */
-@import "pages/main", "pages/section", "pages/layout";
+@import "pages/main", "pages/section", "pages/layout", "pages/notfound";

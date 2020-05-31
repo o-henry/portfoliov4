@@ -102,23 +102,39 @@ const MainTemplate = () => {
             <CustomBtn isClicked={handleClick}>Show More</CustomBtn>
           </div>
         </section>
+
         <section id="contact">
-          <div id="contact_title">
-            <h2>Get In Touch</h2>
-          </div>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
-          </p>
-          <CustomBtn>Contact Me</CustomBtn>
+          <Grid className={classes.contact} item xs={12}>
+            <div id="contact_title">
+              <h2>Get In Touch</h2>
+            </div>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum.
+            </p>
+            <div id="contact_btn">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="mailto:c.henry.9209@gmail.com"
+              >
+                <CustomBtn>Contact Me</CustomBtn>
+              </a>
+            </div>
+          </Grid>
         </section>
+
+        <Grid className={classes.footer} item xs={12}>
+          <div id="footer">Designed & Built by Chan Haeng Lee</div>
+        </Grid>
       </Grid>
     </div>
   );

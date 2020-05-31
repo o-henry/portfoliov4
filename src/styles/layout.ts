@@ -59,6 +59,14 @@ const useStyles = makeStyles((theme: Theme) =>
       height: "auto",
       justifyContent: "center",
     },
+    contact: {
+      display: "flex",
+      flexDirection: "column",
+      padding: "150px 0",
+    },
+    footer: {
+      padding: "3rem",
+    },
   })
 );
 
