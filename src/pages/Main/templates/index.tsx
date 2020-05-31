@@ -123,7 +123,7 @@ const MainTemplate = ({
             <div id="contact_title">
               <h2>Get In Touch</h2>
             </div>
-            <p>
+            <p id="contact_content">
               현재 구직중에 있습니다. 언제든지 저에게 연락 주시면, 바로 응답
               드리겠습니다.
             </p>

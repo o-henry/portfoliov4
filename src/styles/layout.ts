@@ -65,6 +65,7 @@ const useStyles = makeStyles((theme: Theme) =>
       padding: "150px 0",
       justifyContent: "center",
       alignItems: "center",
+      minHeight: "100vh",
     },
     footer: {
       padding: "3rem",

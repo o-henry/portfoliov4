@@ -1,5 +1,5 @@
 //@ts-nocheck
-import React, { useState, createRef } from "react";
+import React, { useEffect, useState, createRef } from "react";
 import { useStyles } from "@styles/index";
 import { CustomBtn } from "@components/index";
 
@@ -33,14 +33,26 @@ const CustomMenu = ({
 }: any) => {
   const classes = useStyles();
   const [open, setOpen] = useState(false);
+  const [isClicked, setIsClicked] = useState(false);
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
 
-  const handleScroll = (e: any) => {
-    console.log(e, e.target.id);
+  const handleClose = (e) => {
+    return setOpen(false);
+  };
+
+  const clicked = () => {
+    setIsClicked(true);
+  };
+
+  const handleScroll = async (e: any) => {
     if (e.target.id == "about" && moveToAbout.current) {
       moveToAbout.current.scrollIntoView({
         behavior: "smooth",
         block: "start",
       });
+      await handleClose();
     } else if (e.target.id == "exp" && moveToExp.current) {
       moveToExp.current.scrollIntoView({
         behavior: "smooth",
@@ -59,13 +71,11 @@ const CustomMenu = ({
     }
   };
 
-  const handleClickOpen = () => {
-    setOpen(true);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
-  };
+  useEffect(() => {
+    if (isClicked) {
+      setOpen(false);
+    }
+  });
 
   return (
     <section id="menuBar" className={classes.menu}>
@@ -114,29 +124,23 @@ const CustomMenu = ({
 
                 <div className="menu_list_layout">
                   <List>
-                    <ListItem button>
-                      <ListItemText
-                        className="listItem_position"
-                        primary="About"
-                      />
+                    <ListItem button onClick={clicked}>
+                      <a href="#about">About</a>
                     </ListItem>
-                    <ListItem button>
-                      <ListItemText
-                        className="listItem_position"
-                        primary="Experience"
-                      />
+                    <ListItem>
+                      <button id="exp" onClick={handleScroll}>
+                        Experience
+                      </button>
                     </ListItem>
-                    <ListItem button>
-                      <ListItemText
-                        className="listItem_position"
-                        primary="Project"
-                      />
+                    <ListItem>
+                      <button id="btn_project" onClick={handleScroll}>
+                        Project
+                      </button>
                     </ListItem>
-                    <ListItem button>
-                      <ListItemText
-                        className="listItem_position"
-                        primary="Contact"
-                      />
+                    <ListItem>
+                      <button id="btn_contact" onClick={handleScroll}>
+                        Contact
+                      </button>
                     </ListItem>
                   </List>
                 </div>
