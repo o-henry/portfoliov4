@@ -1,24 +1,33 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useStyles } from "@styles/index";
 import { useWidth } from "@hooks/index";
 import { CustomBtn, ProjectCard } from "@components/index";
 import { profile } from "@static/index";
 import Grid from "@material-ui/core/Grid";
-// import GridList from "@material-ui/core/GridList";
-// import GridListTile from "@material-ui/core/GridListTile";
 import Hidden from "@material-ui/core/Hidden";
 
-const MainTemplate = () => {
+const MainTemplate = ({ moveToAbout }: any) => {
   const classes = useStyles();
   const width = useWidth();
   const [showMore, setShowMore] = useState(false);
+  const [scrollTop, setScrollTop] = useState(0);
 
-  console.log(width);
+  const moveTop = () => {
+    return window.scroll({ top: 0, left: 0, behavior: "smooth" });
+  };
 
   const handleClick = () => {
     setShowMore(true);
   };
 
+  useEffect(() => {
+    const onScroll = (e: any) => {
+      setScrollTop(e.target.documentElement.scrollTop);
+    };
+    window.addEventListener("scroll", onScroll);
+  }, [scrollTop]);
+
+  console.log("aaaa", moveToAbout);
   return (
     <div
       className={
@@ -54,21 +63,18 @@ const MainTemplate = () => {
             </a>
           </Grid>
         </section>
+
         <section id="about">
           <Grid className={classes.about} item xs={12}>
             <Grid item xs={12} sm={6} md={6} xl={6} lg={6}>
-              <h2>About, Me</h2>
+              <h2 id="about_header" ref={moveToAbout}>
+                About, Me
+              </h2>
+
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged. It was
-                popularised in the 1960s with the release of Letraset sheets
-                containing Lorem Ipsum passages, and more recently with desktop
-                publishing software like Aldus PageMaker including versions of
-                Lorem Ipsum.
               </p>
             </Grid>
             <Hidden only={["xs"]}>
@@ -82,6 +88,7 @@ const MainTemplate = () => {
             </Hidden>
           </Grid>
         </section>
+
         <section id="work">
           <Grid className={classes.work} item xs={12}>
             <h2>Where I've Worked</h2>

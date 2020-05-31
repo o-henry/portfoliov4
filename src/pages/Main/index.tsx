@@ -1,10 +1,10 @@
 import React from "react";
 import { MainTemplate } from "@pages/index";
 
-const Main = () => {
+const Main = ({ moveToAbout }: any) => {
   return (
     <div>
-      <MainTemplate />
+      <MainTemplate moveToAbout={moveToAbout} />
     </div>
   );
 };

@@ -1,4 +1,5 @@
-import React from "react";
+//@ts-nocheck
+import React, { useState, createRef } from "react";
 import { useStyles } from "@styles/index";
 import { CustomBtn } from "@components/index";
 
@@ -24,9 +25,18 @@ const Transition = React.forwardRef(function Transition(
 
 const pdf = require("../../../ChanHaengLee.pdf");
 
-const CustomMenu = () => {
+const CustomMenu = ({ moveToAbout }: any) => {
   const classes = useStyles();
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
+
+  const handleScroll = (e: any) => {
+    if (moveToAbout.current) {
+      moveToAbout.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -42,7 +52,7 @@ const CustomMenu = () => {
         <Grid item xs={12}>
           <Hidden only={["xs", "sm"]}>
             <div className="menu_btn_layout wide">
-              <div>About</div>
+              <button onClick={handleScroll}>About</button>
               <div>Experience</div>
               <div>Work</div>
               <div>Contact</div>

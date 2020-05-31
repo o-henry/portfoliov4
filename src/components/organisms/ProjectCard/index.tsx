@@ -55,6 +55,7 @@ const ProjectCard = ({ showMore }: any) => {
         {projectList.slice(0, numberOfItems).map((project) => {
           return (
             <GridListTile
+              key={project.name}
               rows={width == "xs" ? 2.3 : 2.4}
               cols={
                 width == "xs" ? 2 : width == "sm" || width == "md" ? 0.9 : 0.6
