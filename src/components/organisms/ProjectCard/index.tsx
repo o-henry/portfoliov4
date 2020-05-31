@@ -24,24 +24,6 @@ const projectList = [
       "인스타그램 장소, 날짜태그 데이터를 크롤링 및 가공 하여 사용하는 해시태그 데이터 기반 어플리케이션 개발중 입니다.",
     stack: "React, Express, Expo, MongoDB, Puppeteer",
   },
-  {
-    name: "LocalSNS",
-    description:
-      "인스타그램 장소, 날짜태그 데이터를 크롤링 및 가공 하여 사용하는 해시태그 데이터 기반 어플리케이션 개발중 입니다.",
-    stack: "React, Express, Expo, MongoDB, Puppeteer",
-  },
-  {
-    name: "LocalSNS",
-    description:
-      "인스타그램 장소, 날짜태그 데이터를 크롤링 및 가공 하여 사용하는 해시태그 데이터 기반 어플리케이션 개발중 입니다.",
-    stack: "React, Express, Expo, MongoDB, Puppeteer",
-  },
-  {
-    name: "LocalSNS",
-    description:
-      "인스타그램 장소, 날짜태그 데이터를 크롤링 및 가공 하여 사용하는 해시태그 데이터 기반 어플리케이션 개발중 입니다.",
-    stack: "React, Express, Expo, MongoDB, Puppeteer",
-  },
 ];
 
 const ProjectCard = ({ showMore }: any) => {

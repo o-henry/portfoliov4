@@ -15,22 +15,12 @@ const MainTemplate = ({
   const classes = useStyles();
   const width = useWidth();
   const [showMore, setShowMore] = useState(false);
-  const [scrollTop, setScrollTop] = useState(0);
 
-  const moveTop = () => {
-    return window.scroll({ top: 0, left: 0, behavior: "smooth" });
-  };
+  console.log("width", width);
 
   const handleClick = () => {
     setShowMore(true);
   };
-
-  useEffect(() => {
-    const onScroll = (e: any) => {
-      setScrollTop(e.target.documentElement.scrollTop);
-    };
-    window.addEventListener("scroll", onScroll);
-  }, [scrollTop]);
 
   return (
     <div

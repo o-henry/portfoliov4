@@ -11,7 +11,6 @@ import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
 import CloseIcon from "@material-ui/icons/Close";
 import Menu from "@material-ui/icons/Menu";
-import ListItemText from "@material-ui/core/ListItemText";
 import ListItem from "@material-ui/core/ListItem";
 import List from "@material-ui/core/List";
 import { TransitionProps } from "@material-ui/core/transitions";
@@ -114,17 +113,41 @@ const CustomMenu = ({
 
                 <div className="menu_list_layout">
                   <List>
-                    <ListItem button onClick={handleClose}>
-                      <a href="#about">About</a>
+                    <ListItem
+                      className="list_style"
+                      button
+                      onClick={handleClose}
+                    >
+                      <a className="list_font" href="#about">
+                        About
+                      </a>
                     </ListItem>
-                    <ListItem button onClick={handleClose}>
-                      <a href="#work">Experience</a>
+                    <ListItem
+                      className="list_style"
+                      button
+                      onClick={handleClose}
+                    >
+                      <a className="list_font" href="#work">
+                        Experience
+                      </a>
                     </ListItem>
-                    <ListItem button onClick={handleClose}>
-                      <a href="#project">Project</a>
+                    <ListItem
+                      className="list_style"
+                      button
+                      onClick={handleClose}
+                    >
+                      <a className="list_font" href="#project">
+                        Project
+                      </a>
                     </ListItem>
-                    <ListItem button onClick={handleClose}>
-                      <a href="#contact">Contact</a>
+                    <ListItem
+                      className="list_style"
+                      button
+                      onClick={handleClose}
+                    >
+                      <a className="list_font" href="#contact">
+                        Contact
+                      </a>
                     </ListItem>
                   </List>
                 </div>
