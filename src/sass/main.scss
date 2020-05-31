@@ -56,6 +56,12 @@
 }
 
 @font-face {
+  font-family: "SF Text";
+  font-weight: 700;
+  src: url("https://sf.abarba.me/SF-UI-Text-Bold.otf");
+}
+
+@font-face {
   font-family: "SF Mono";
   font-weight: 700;
   src: url("https://sf.abarba.me/SFMono-Bold.otf");
@@ -170,9 +176,10 @@ h1 {
 
 h2 {
   font-weight: bold !important;
+  font-family: "SF Display" !important;
   font-size: 1.5rem !important;
   padding-bottom: 1.5rem !important;
-  font-family: "Baloo Bhai 2" !important;
+  // font-family: "Baloo Bhai 2" !important;
 }
 
 h3 {

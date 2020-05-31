@@ -33,20 +33,11 @@ const MainTemplate = ({
       }
     >
       <Grid container>
-        <section id="intro">
-          <Grid className={classes.intro} item xs={12}>
-            <h1>Hi, I'm Chan Haeng Lee.</h1>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
+        <Grid className={classes.intro} item xs={12}>
+          <section id="intro">
+            <h1 className="portfolio_header">Hi, I'm Chan Haeng Lee.</h1>
+            <p className="portfolio_content">
+              I'm a junior developer who loves collaboration and communication.{" "}
             </p>
             <a
               target="_blank"
@@ -55,17 +46,19 @@ const MainTemplate = ({
             >
               <CustomBtn>{"Get In Touch"}</CustomBtn>
             </a>
-          </Grid>
-        </section>
+          </section>
+        </Grid>
 
         <section ref={moveToAbout} id="about">
           <Grid className={classes.about} item xs={12}>
             <Grid item xs={12} sm={6} md={6} xl={6} lg={6}>
-              <h2 id="about_header">About, Me</h2>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
+              <h2>About, Me</h2>
+              <p className="portfolio_content">
+                안녕하세요, 저는 이찬행 이라고 합니다. <br /> 부트캠프 과정을
+                통해 자바스크립트를 기본으로 하여 웹 전반에 대한 개발을
+                배웠습니다. 하드 스킬 뿐만 아니라, 협업을 통해 커뮤니케이션과
+                유연성등 의 소프트 스킬 또한 함양하였습니다. 애자일 & 스크럼
+                방식을 채택하여 프로젝트를 관리 및 진행하였습니다.
               </p>
             </Grid>
             <Hidden only={["xs"]}>
@@ -83,18 +76,9 @@ const MainTemplate = ({
         <section ref={moveToExp} id="work">
           <Grid className={classes.work} item xs={12}>
             <h2>Where I've Worked & Experienced</h2>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
-            </p>
+            {/* <ul>
+              <li> Code States</li>
+            </ul> */}
           </Grid>
         </section>
 
@@ -129,7 +113,7 @@ const MainTemplate = ({
         </Grid>
 
         <Grid className={classes.footer} item xs={12}>
-          <div id="footer">Designed & Built by Chan Haeng Lee</div>
+          <div id="footer">Built by Chan Haeng Lee</div>
         </Grid>
       </Grid>
     </div>

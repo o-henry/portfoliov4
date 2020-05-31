@@ -32,3 +32,15 @@
   color: gray;
   font-weight: 400;
 }
+
+.portfolio_header {
+  font-family: $sftext !important;
+  font-weight: 100 !important;
+}
+
+.portfolio_content {
+  font-family: $scoreextra !important;
+  font-size: 1rem;
+  letter-spacing: 0.09rem;
+  line-height: 1.5rem;
+}
