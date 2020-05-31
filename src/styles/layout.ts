@@ -55,9 +55,19 @@ const useStyles = makeStyles((theme: Theme) =>
       // minHeight: "100vh",
     },
     project: {
+      flexGrow: 1,
       display: "flex",
-      flexDirection: "column",
+      flexWrap: "wrap",
+      justifyContent: "space-around",
+      overflow: "hidden",
+      flexDirection: "row",
       padding: "150px 0",
+      height: "100%",
+    },
+    gridList: {
+      width: "100%",
+      height: "100%",
+      margin: "0 1rem 0 1rem",
     },
   })
 );

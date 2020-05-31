@@ -1,14 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import { useStyles } from "@styles/index";
 import { useWidth } from "@hooks/index";
-import { CustomBtn } from "@components/index";
+import { CustomBtn, ProjectCard } from "@components/index";
 import { profile } from "@static/index";
 import Grid from "@material-ui/core/Grid";
+import GridList from "@material-ui/core/GridList";
 import Hidden from "@material-ui/core/Hidden";
 
 const MainTemplate = () => {
   const classes = useStyles();
   const width = useWidth();
+  const [showMore, setShowMore] = useState(false);
+
+  console.log(width);
+
+  const handleClick = () => {
+    setShowMore(true);
+  };
 
   return (
     <div
@@ -85,8 +93,23 @@ const MainTemplate = () => {
           </Grid>
         </section>
         <section id="project">
-          <Grid className={classes.project} item xs={12}>
+          <Grid className={classes.project}>
             <h2>My Project</h2>
+            <GridList
+              cellHeight={width == "sm" || width == "md" ? 155 : 230}
+              className={classes.gridList}
+            >
+              <Grid item md={6} lg={4} xl={4} sm={6} xs={12}>
+                <ProjectCard />
+              </Grid>
+              {/* <Grid item md={6} lg={4} xl={4} sm={6} xs={12}>
+                <ProjectCard />
+              </Grid>
+              <Grid item md={6} lg={4} xl={4} sm={6} xs={12}>
+                <ProjectCard />
+              </Grid> */}
+            </GridList>
+            <CustomBtn isClicked={handleClick}>버튼</CustomBtn>
           </Grid>
         </section>
       </Grid>

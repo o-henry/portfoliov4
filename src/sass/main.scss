@@ -151,6 +151,7 @@ body,
   font-family: "S-CoreDream-3Light", Open Sans, sans-serif !important;
   height: 100% !important;
   min-height: 100vh;
+  background: white !important;
 }
 
 * {
@@ -160,15 +161,24 @@ body,
   outline: none;
 }
 
-h2 {
-  font-weight: bold !important;
-  font-size: 1.5rem !important;
-}
 h1 {
   font-weight: bold !important;
   font-size: 3rem !important;
   font-family: "Baloo Bhai 2" !important;
   padding-bottom: 2rem !important;
+}
+
+h2 {
+  font-weight: bold !important;
+  font-size: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+}
+
+h3 {
+  font-weight: bold !important;
+  font-size: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+  color: white !important;
 }
 
 p {
@@ -195,10 +205,10 @@ p {
 @import "abstract/reset", "abstract/utils";
 
 /* components */
-@import "components/menu";
+@import "components/menu", "components/projectcard";
 
 /* common */
 @import "common/button", "common/img";
 
 /* pages */
-@import "pages/main";
+@import "pages/main", "pages/section";
