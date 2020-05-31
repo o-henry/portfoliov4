@@ -1,5 +1,9 @@
 import React from "react";
 import { github } from "@static/index";
+import { useStyles } from "@styles/index";
+import { useWidth } from "@hooks/index";
+import GridList from "@material-ui/core/GridList";
+import GridListTile from "@material-ui/core/GridListTile";
 
 const projectList = [
   {
@@ -22,20 +26,30 @@ const projectList = [
 ];
 
 const ProjectCard = () => {
+  const classes = useStyles();
+  const width = useWidth();
+
   return (
     <>
-      {projectList.map((project) => {
-        return (
-          <div className="projectcard_layout">
-            <div className="projectcard_header">
-              <h3>{project.name}</h3>
-              <img className="stack_icon_style" src={github} alt="github" />
-            </div>
-            <p className="projectcard_body_style">{project.description}</p>
-            <p className="projectcard_body_stack">{project.stack}</p>
-          </div>
-        );
-      })}
+      <GridList cellHeight={150} className={classes.gridList}>
+        {projectList.map((project) => {
+          return (
+            <GridListTile
+              rows={width == "xs" ? 1.8 : 3}
+              cols={width == "xs" ? 2 : 0.6}
+            >
+              <div className="projectcard_layout">
+                <div className="projectcard_header">
+                  <h3>{project.name}</h3>
+                  <img className="stack_icon_style" src={github} alt="github" />
+                </div>
+                <p className="projectcard_body_style">{project.description}</p>
+                <p className="projectcard_body_stack">{project.stack}</p>
+              </div>
+            </GridListTile>
+          );
+        })}
+      </GridList>
     </>
   );
 };

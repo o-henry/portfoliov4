@@ -54,20 +54,10 @@ const useStyles = makeStyles((theme: Theme) =>
       padding: "150px 0",
       // minHeight: "100vh",
     },
-    project: {
-      flexGrow: 1,
-      display: "flex",
-      flexWrap: "wrap",
-      justifyContent: "space-around",
-      overflow: "hidden",
-      flexDirection: "row",
-      padding: "150px 0",
-      height: "100%",
-    },
     gridList: {
       width: "100%",
-      height: "100%",
-      margin: "0 1rem 0 1rem",
+      height: "100vh",
+      justifyContent: "center",
     },
   })
 );
