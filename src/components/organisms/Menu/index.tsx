@@ -33,17 +33,13 @@ const CustomMenu = ({
 }: any) => {
   const classes = useStyles();
   const [open, setOpen] = useState(false);
-  const [isClicked, setIsClicked] = useState(false);
+
   const handleClickOpen = () => {
     setOpen(true);
   };
 
   const handleClose = (e) => {
-    return setOpen(false);
-  };
-
-  const clicked = () => {
-    setIsClicked(true);
+    setOpen(false);
   };
 
   const handleScroll = async (e: any) => {
@@ -70,12 +66,6 @@ const CustomMenu = ({
       });
     }
   };
-
-  useEffect(() => {
-    if (isClicked) {
-      setOpen(false);
-    }
-  });
 
   return (
     <section id="menuBar" className={classes.menu}>
@@ -124,23 +114,17 @@ const CustomMenu = ({
 
                 <div className="menu_list_layout">
                   <List>
-                    <ListItem button onClick={clicked}>
+                    <ListItem button onClick={handleClose}>
                       <a href="#about">About</a>
                     </ListItem>
-                    <ListItem>
-                      <button id="exp" onClick={handleScroll}>
-                        Experience
-                      </button>
+                    <ListItem button onClick={handleClose}>
+                      <a href="#work">Experience</a>
                     </ListItem>
-                    <ListItem>
-                      <button id="btn_project" onClick={handleScroll}>
-                        Project
-                      </button>
+                    <ListItem button onClick={handleClose}>
+                      <a href="#project">Project</a>
                     </ListItem>
-                    <ListItem>
-                      <button id="btn_contact" onClick={handleScroll}>
-                        Contact
-                      </button>
+                    <ListItem button onClick={handleClose}>
+                      <a href="#contact">Contact</a>
                     </ListItem>
                   </List>
                 </div>

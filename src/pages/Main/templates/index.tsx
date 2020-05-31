@@ -119,13 +119,12 @@ const MainTemplate = ({
         </section>
 
         <Grid ref={moveToContact} className={classes.contact} item xs={12}>
-          <section id="cotact">
+          <section id="contact">
             <div id="contact_title">
               <h2>Get In Touch</h2>
             </div>
             <p id="contact_content">
-              현재 구직중에 있습니다. 언제든지 저에게 연락 주시면, 바로 응답
-              드리겠습니다.
+              현재 구직 중에 있습니다. 언제든지 연락 주세요.
             </p>
           </section>
           <div id="contact_btn">
