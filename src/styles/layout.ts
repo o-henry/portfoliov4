@@ -4,7 +4,7 @@ const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     rootLg: {
       flexGrow: 1,
-      padding: "0 150px 200px 150px",
+      padding: "0 150px 0 150px",
       minHeight: "100vh",
       maxWidth: "1600px",
       margin: "0 auto",
@@ -39,7 +39,7 @@ const useStyles = makeStyles((theme: Theme) =>
       flexDirection: "column",
       textAlign: "center",
       minHeight: "100vh",
-      paddingBottom: "6rem",
+      paddingBottom: "10rem",
       // maxWidth: "1000px",
     },
     about: {
@@ -63,6 +63,8 @@ const useStyles = makeStyles((theme: Theme) =>
       display: "flex",
       flexDirection: "column",
       padding: "150px 0",
+      justifyContent: "center",
+      alignItems: "center",
     },
     footer: {
       padding: "3rem",

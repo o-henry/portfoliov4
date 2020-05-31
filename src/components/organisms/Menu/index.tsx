@@ -22,6 +22,8 @@ const Transition = React.forwardRef(function Transition(
   return <Slide direction="left" ref={ref} {...props} />;
 });
 
+const pdf = require("../../../ChanHaengLee.pdf");
+
 const CustomMenu = () => {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
@@ -44,7 +46,9 @@ const CustomMenu = () => {
               <div>Experience</div>
               <div>Work</div>
               <div>Contact</div>
-              <CustomBtn>{"RESUME"}</CustomBtn>
+              <a href={pdf} target="_blank">
+                <CustomBtn>{"RESUME"}</CustomBtn>
+              </a>
             </div>
           </Hidden>
           <Hidden only={["md", "lg", "xl"]}>
