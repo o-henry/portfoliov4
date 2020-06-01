@@ -3,6 +3,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto&display=swap");
 @import url("https://use.typekit.net/ptd4vrz.css");
 @import url("https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Anton&family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700;900&family=Raleway:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700;900&display=swap");
 @font-face {
   font-family: "MapoFlowerIsland";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoFlowerIslandA.woff")
@@ -176,7 +178,7 @@ h1 {
 
 h2 {
   font-weight: bold !important;
-  font-family: "SF Display" !important;
+  font-family: "Merriweather" !important;
   font-size: 1.5rem !important;
   padding-bottom: 1.5rem !important;
   // font-family: "Baloo Bhai 2" !important;
@@ -186,7 +188,9 @@ h3 {
   font-weight: bold !important;
   font-size: 1rem !important;
   padding-bottom: 1.5rem !important;
-  color: white !important;
+  font-family: SF Display !important;
+  // color: white !important;
+  color: black !important;
 }
 
 p {
