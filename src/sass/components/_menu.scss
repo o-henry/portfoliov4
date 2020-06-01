@@ -4,9 +4,11 @@
   justify-content: flex-end;
   justify-content: space-between;
   align-items: center;
+
   &.wide {
     width: 30rem;
     padding: 0 2rem 0 2rem;
+    margin-top: 2rem;
   }
   &.small {
     padding: 0 1rem 0 1rem;
@@ -33,6 +35,9 @@
 .list_font {
   font-family: $scoreextra !important;
   letter-spacing: 0.3rem;
+  &:hover {
+    color: red;
+  }
 }
 
 .MuiTypography-root.MuiListItemText-primary.MuiTypography-body1.MuiTypography-displayBlock {

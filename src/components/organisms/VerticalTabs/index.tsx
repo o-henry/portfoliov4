@@ -74,9 +74,7 @@ const VerticalTabs = () => {
                 React Typescript Sass Gql을 주로 하여 <br />
                 개발하였으며 atomic 디자인 패턴을 적용했습니다.
               </li>
-              <li className="list_before">
-                랜딩 페이지 개발 <br />웹 앱 개발
-              </li>
+              <li className="list_before">랜딩 페이지 개발 / 웹 앱 개발</li>
             </ul>
           </div>
         </div>

@@ -2,6 +2,7 @@
 import React, { useEffect, useState, createRef } from "react";
 import { useStyles } from "@styles/index";
 import { CustomBtn } from "@components/index";
+import Headroom from "react-headroom";
 
 import Grid from "@material-ui/core/Grid";
 import Hidden from "@material-ui/core/Hidden";
@@ -71,23 +72,33 @@ const CustomMenu = ({
       <Grid container>
         <Grid item xs={12}>
           <Hidden only={["xs", "sm"]}>
-            <div className="menu_btn_layout wide">
-              <button id="about" onClick={handleScroll}>
-                About
-              </button>
-              <button id="exp" onClick={handleScroll}>
-                Experience
-              </button>
-              <button id="btn_project" onClick={handleScroll}>
-                Project
-              </button>
-              <button id="btn_contact" onClick={handleScroll}>
-                Contact
-              </button>
-              <a href={pdf} target="_blank">
-                <CustomBtn>{"RESUME"}</CustomBtn>
-              </a>
-            </div>
+            <Headroom
+              className="headroom"
+              style={{
+                webkitTransition: "all .5s ease-in-out",
+                mozTransition: "all .5s ease-in-out",
+                oTransition: "all .5s ease-in-out",
+                transition: "all .5s ease-in-out",
+              }}
+            >
+              <div className={"menu_btn_layout wide"}>
+                <button id="about" onClick={handleScroll}>
+                  About
+                </button>
+                <button id="exp" onClick={handleScroll}>
+                  Experience
+                </button>
+                <button id="btn_project" onClick={handleScroll}>
+                  Project
+                </button>
+                <button id="btn_contact" onClick={handleScroll}>
+                  Contact
+                </button>
+                <a href={pdf} target="_blank">
+                  <CustomBtn>{"RESUME"}</CustomBtn>
+                </a>
+              </div>
+            </Headroom>
           </Hidden>
           <Hidden only={["md", "lg", "xl"]}>
             <div className="menu_btn_layout small">
