@@ -57,3 +57,9 @@
   letter-spacing: 0.09rem;
   line-height: 1.5rem;
 }
+
+.stack_list {
+  display: flex;
+  flex-direction: row;
+  width: 27rem;
+}

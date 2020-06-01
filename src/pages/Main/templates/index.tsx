@@ -59,6 +59,22 @@ const MainTemplate = ({
                 배웠습니다. 하드 스킬뿐만 아니라, 협업을 통해 커뮤니케이션과
                 유연성 등 의 소프트 스킬 또한 함양하였습니다. 애자일 & 스크럼
                 방식을 채택하여 프로젝트를 관리 및 진행하였습니다.
+                <ul>
+                  <div>
+                    <div className="stack_list">
+                      <li className="list_before">JavaScript(ES6+)</li>
+                      <li className="list_before">HTML CSS/SCSS</li>
+                    </div>
+                    <div className="stack_list">
+                      <li className="list_before">React</li>
+                      <li className="list_before">Node.js</li>
+                    </div>
+                    <div className="stack_list">
+                      <li className="list_before">MongoDB</li>
+                      <li className="list_before">Graphql</li>
+                    </div>
+                  </div>
+                </ul>
               </p>
             </Grid>
             <Hidden only={["xs"]}>

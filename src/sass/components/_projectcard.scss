@@ -5,9 +5,10 @@
   box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
   border-radius: 3px;
   padding: 3rem 2.5rem;
-  margin: 0.2rem;
+  // margin: 0.2rem;
   // width: 100%;
   justify-content: center;
+  position: relative;
   height: 65%;
 }
 
@@ -27,7 +28,12 @@
 
 .projectcard_body_stack {
   // padding: 1rem 0 0 0;
+  font-size: 0.7rem;
+  font-weight: 100;
+  align-items: flex-end;
   color: gray;
+  position: absolute;
+  bottom: 40px;
 }
 
 .projectcard_img_layout {
@@ -36,6 +42,13 @@
 }
 .projectcard_img {
   position: relative;
-  padding: 0 0 0 10px;
+  padding: 0 0 0 20px;
   right: 0;
+  bottom: 6px;
+}
+
+.projectcard_footer {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
 }
