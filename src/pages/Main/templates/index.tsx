@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { useStyles } from "@styles/index";
 import { useWidth } from "@hooks/index";
 import { CustomBtn, ProjectCard, VerticalTabs } from "@components/index";
-import { profile } from "@static/index";
+import { profile, github, blog } from "@static/index";
 import Grid from "@material-ui/core/Grid";
 import Hidden from "@material-ui/core/Hidden";
 
@@ -55,7 +55,13 @@ const MainTemplate = ({
         </Grid>
 
         <section ref={moveToAbout} id="about">
-          <Grid className={classes.about} item xs={12}>
+          <Grid
+            className={
+              width == "lg" || width == "xl" ? classes.aboutLg : classes.about
+            }
+            item
+            xs={12}
+          >
             <Grid item xs={12} sm={6} md={6} xl={6} lg={6}>
               <h2>About, Me</h2>
               <div className="portfolio_content">
@@ -136,6 +142,14 @@ const MainTemplate = ({
 
         <Grid className={classes.footer} item xs={12}>
           <div id="footer">Built by Chan Haeng Lee</div>
+          <div id="footer">
+            <a target="_blank" href="https://github.com/o-henry">
+              <img className="footer_img" src={github} alt="github" />
+            </a>
+            <a target="_blank" href="https://o-henry.github.io/">
+              <img className="footer_img" src={blog} alt="blog" />
+            </a>
+          </div>
         </Grid>
       </Grid>
     </div>

@@ -1,0 +1,16 @@
+.vertical_layout {
+  //   display: flex;
+}
+
+.vertical_layout::after {
+  content: "";
+  //   display: block;
+  width: 10px;
+  height: 900px;
+  background-color: rgb(168, 178, 209);
+  margin: 0px auto;
+}
+
+.d {
+  width: 10px !important;
+}

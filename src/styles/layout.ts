@@ -48,6 +48,11 @@ const useStyles = makeStyles((theme: Theme) =>
       flexDirection: "row",
       padding: "270px 0 200px 0 !important",
     },
+    aboutLg: {
+      display: "flex",
+      padding: "270px 150px 200px 150px !important;",
+      flexDirection: "row",
+    },
     work: {
       display: "flex",
       flexDirection: "column",

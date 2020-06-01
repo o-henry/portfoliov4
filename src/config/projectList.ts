@@ -21,7 +21,7 @@ export const projectList = [
     name: "Local",
     description:
       "인스타그램 장소, 날짜 태그 데이터를 크롤링 및 가공 하여 사용하는 해시태그 데이터 기반 어플리케이션 개발중 입니다. ",
-    stack: "React Express Expo MongoDB Puppeteer",
+    stack: "React Express Expo MongoDB",
     git: "https://github.com/o-henry/local-server-v2",
     youtube: "https://www.youtube.com/embed/LkqD32oWN20",
     blog: "https://o-henry.github.io/2019/10/29/Insta/",

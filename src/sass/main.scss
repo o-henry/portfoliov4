@@ -235,7 +235,8 @@ button {
 @import "abstract/reset", "abstract/utils";
 
 /* components */
-@import "components/menu", "components/projectcard", "components/verticaltabs";
+@import "components/menu", "components/projectcard", "components/verticaltabs",
+  "components/verticaltabs";
 
 /* common */
 @import "common/button", "common/img";

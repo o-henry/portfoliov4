@@ -1,6 +1,6 @@
 import React, { createRef, useRef } from "react";
 import { Main, NotFound } from "@pages/index";
-import { CustomMenu } from "@components/index";
+import { CustomMenu, VerticalInfo } from "@components/index";
 import { Route, Switch } from "react-router-dom";
 import Headroom from "react-headroom";
 
