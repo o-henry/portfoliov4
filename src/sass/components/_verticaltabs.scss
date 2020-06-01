@@ -28,13 +28,14 @@ ul {
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-  padding-inline-start: 40px;
+  // padding-inline-start: 40px;
 }
 
 li {
   position: relative;
   padding-left: 30px;
   margin-bottom: 10px;
+  width: 99%;
 }
 
 .list_before {
@@ -48,4 +49,9 @@ li {
   padding-right: 30px;
   color: black;
   box-sizing: inherit;
+}
+
+.MuiTabs-vertical {
+  position: relative;
+  top: 24px;
 }

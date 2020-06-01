@@ -13,6 +13,7 @@ export { default as papayaweb2 } from "./papayaweb2.png";
 
 /* asset */
 export { default as profile } from "./profile.svg";
-
+export { default as blog } from "./blogger.svg";
+export { default as link } from "./out.svg";
 /* stack */
 export { default as github } from "./github.svg";

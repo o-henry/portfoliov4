@@ -54,13 +54,52 @@ const VerticalTabs = () => {
         aria-label="Vertical tabs example"
         className={classes.tabs}
       >
-        <Tab label="Code States" {...a11yProps(0)} />
+        <Tab label="Papaya" {...a11yProps(0)} />
         <Tab label="AWS" {...a11yProps(1)} />
-        <Tab label="Papaya" {...a11yProps(2)} />
+        <Tab label="Code States" {...a11yProps(2)} />
       </Tabs>
       <TabPanel value={value} index={0}>
         <div className="exp_title">
-          STUDENT &nbsp;
+          Front End Developer &nbsp; <span id="link_style">@ Papaya</span>
+        </div>
+        <div className="exp_date">2020.02 - 2020.05</div>
+        <p className="exp_content_style">
+          <div>
+            <ul>
+              <li className="list_before">
+                실내 측위 서비스를 지원하는 Papaya라는 회사에서 <br /> 프론트
+                엔드 전부를 맡아 개발했습니다.
+              </li>
+              <li className="list_before">
+                React Typescript Sass Gql을 주로 하여 <br />
+                개발하였으며 atomic 디자인 패턴을 적용했습니다.
+              </li>
+              <li className="list_before">
+                랜딩 페이지 개발 <br />웹 앱 개발
+              </li>
+            </ul>
+          </div>
+        </p>
+      </TabPanel>
+      <TabPanel value={value} index={1}>
+        <div className="exp_title">
+          Participant &nbsp; <span id="link_style">@ AWS 101 & 201</span>
+        </div>
+        <div className="exp_date">2019</div>
+        <p className="exp_content_style">
+          <div>
+            <ul>
+              <li className="list_before">
+                AWS 101 201 세미나를 통해 AWS 클라우드 기초, <br /> 비용 절감 및
+                배포 전 과정 등을 교육받았습니다.
+              </li>
+            </ul>
+          </div>
+        </p>
+      </TabPanel>
+      <TabPanel value={value} index={2}>
+        <div className="exp_title">
+          Student &nbsp;
           <a
             id="link_style"
             target="_blank"
@@ -87,22 +126,6 @@ const VerticalTabs = () => {
             </ul>
           </div>
         </p>
-      </TabPanel>
-      <TabPanel value={value} index={1}>
-        <div className="exp_title">
-          Participant &nbsp; <span id="link_style">@ AWS 101 & 201</span>
-        </div>
-        <div className="exp_date">2019</div>
-        <p className="exp_content_style">
-          {/* <div>
-            <ArrowRightRoundedIcon id="tab_arrow_icon" /> AWS 101 201 세미나를
-            통해 AWS 클라우드 기초 및 비용 절감 속도 및 배포 전 과정 등을
-            교육받았습니다.
-          </div> */}
-        </p>
-      </TabPanel>
-      <TabPanel value={value} index={2}>
-        Item Three
       </TabPanel>
     </div>
   );

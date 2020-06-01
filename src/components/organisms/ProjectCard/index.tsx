@@ -1,5 +1,5 @@
 import React from "react";
-import { github } from "@static/index";
+import { github, link, blog } from "@static/index";
 import { useStyles } from "@styles/index";
 import { useWidth } from "@hooks/index";
 import GridList from "@material-ui/core/GridList";
@@ -11,6 +11,9 @@ const projectList = [
     description:
       "리액트 기반 반응형 SPA 로, Mapbox를 기반으로 한, 실내 측위 서비스 입니다. Apollo Subscription을 통한 실시간 위치 공유기능이 추가되었습니다.",
     stack: "React Mapbox Graphql AWS",
+    git: "",
+    youtube: "https://www.youtube.com/embed/s5gBXg1zrHY",
+    blog: "https://o-henry.github.io/2020/05/10/maboxgljs/",
   },
   {
     name: "Crunch",
@@ -46,7 +49,45 @@ const ProjectCard = ({ showMore }: any) => {
               <div className="projectcard_layout">
                 <div className="projectcard_header">
                   <h3>{project.name}</h3>
-                  <img className="stack_icon_style" src={github} alt="github" />
+                  <div className="projectcard_img_layout">
+                    {project.git !== "" ? (
+                      <div className="projectcard_img">
+                        <img
+                          className="stack_icon_style"
+                          src={github}
+                          alt="github"
+                        />
+                      </div>
+                    ) : (
+                      ""
+                    )}
+                    {project.youtube !== "" ? (
+                      <div className="projectcard_img">
+                        <a target="_blank" href={project.youtube}>
+                          <img
+                            className="stack_icon_style"
+                            src={link}
+                            alt="youtube"
+                          />
+                        </a>
+                      </div>
+                    ) : (
+                      ""
+                    )}
+                    {project.blog !== "" ? (
+                      <div className="projectcard_img">
+                        <a target="_blank" href={project.blog}>
+                          <img
+                            className="stack_icon_style"
+                            src={blog}
+                            alt="blog"
+                          />
+                        </a>
+                      </div>
+                    ) : (
+                      ""
+                    )}
+                  </div>
                 </div>
                 <p className="projectcard_body_style">{project.description}</p>
                 <p className="projectcard_body_stack">{project.stack}</p>

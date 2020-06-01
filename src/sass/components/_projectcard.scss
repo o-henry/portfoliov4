@@ -7,6 +7,7 @@
   padding: 3rem 2.5rem;
   margin: 0.2rem;
   // width: 100%;
+  justify-content: center;
   height: 65%;
 }
 
@@ -27,4 +28,14 @@
 .projectcard_body_stack {
   // padding: 1rem 0 0 0;
   color: gray;
+}
+
+.projectcard_img_layout {
+  display: flex;
+  flex-direction: row;
+}
+.projectcard_img {
+  position: relative;
+  padding: 0 0 0 10px;
+  right: 0;
 }

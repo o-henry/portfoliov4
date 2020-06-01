@@ -52,6 +52,7 @@ const useStyles = makeStyles((theme: Theme) =>
       display: "flex",
       flexDirection: "column",
       padding: "230px 0",
+      margin: "0px auto !important",
       justifyContent: "center",
       alignItems: "center",
       width: "100%",
@@ -77,8 +78,9 @@ const useStyles = makeStyles((theme: Theme) =>
       flexGrow: 1,
       backgroundColor: theme.palette.background.paper,
       display: "flex",
-      height: 174,
+      height: 175,
       padding: "3rem 0",
+      // margin: "0px 128px",
       // width: "100%",
     },
     tabs: {
