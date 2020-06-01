@@ -49,7 +49,7 @@ const MainTemplate = ({
               rel="noopener noreferrer"
               href="mailto:c.henry.9209@gmail.com"
             >
-              <CustomBtn>{"Get In Touch"}</CustomBtn>
+              <CustomBtn id="more_button">{"Get In Touch"}</CustomBtn>
             </a>
           </section>
         </Grid>
@@ -108,7 +108,9 @@ const MainTemplate = ({
             showMore={showMore}
           />
           <div id="project_btn">
-            <CustomBtn isClicked={handleClick}>Show More</CustomBtn>
+            <CustomBtn id="more_button" isClicked={handleClick}>
+              Show More
+            </CustomBtn>
           </div>
         </section>
 
@@ -127,7 +129,7 @@ const MainTemplate = ({
               rel="noopener noreferrer"
               href="mailto:c.henry.9209@gmail.com"
             >
-              <CustomBtn>Contact Me</CustomBtn>
+              <CustomBtn id="more_button">welcome</CustomBtn>
             </a>
           </div>
         </Grid>

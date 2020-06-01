@@ -33,7 +33,7 @@ const ProjectCard = ({ itemCount, projectList, showMore }: any) => {
                       ? 2
                       : width == "sm" || width == "md"
                       ? 0.9
-                      : 0.6
+                      : 0.66
                   }
                 >
                   <div className="projectcard_layout">

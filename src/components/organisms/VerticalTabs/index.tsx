@@ -105,7 +105,7 @@ const VerticalTabs = () => {
             target="_blank"
             href="https://www.codestates.com/?gclid=CjwKCAjwq832BRA5EiwACvCWsdaSP6y6ucJrBgZY-3DyzZSWoGY--9Xlby0Ndw8MXqzas7HG4mE82BoCk0gQAvD_BwE"
           >
-            @ 코드 스테이츠 / 이머시브 코스
+            @ Code States
           </a>
         </div>
         <div className="exp_date">2019.07 - 2019.10</div>
