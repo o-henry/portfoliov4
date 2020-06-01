@@ -208,6 +208,7 @@ button {
   background: none;
   cursor: pointer;
 }
+
 // th,
 // td {
 //   -ms-overflow-style: none !important; // IE에서 스크롤바 감춤
@@ -229,7 +230,7 @@ button {
 @import "abstract/reset", "abstract/utils";
 
 /* components */
-@import "components/menu", "components/projectcard";
+@import "components/menu", "components/projectcard", "components/verticaltabs";
 
 /* common */
 @import "common/button", "common/img";

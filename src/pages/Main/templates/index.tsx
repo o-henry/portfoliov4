@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useStyles } from "@styles/index";
 import { useWidth } from "@hooks/index";
-import { CustomBtn, ProjectCard } from "@components/index";
+import { CustomBtn, ProjectCard, VerticalTabs } from "@components/index";
 import { profile } from "@static/index";
 import Grid from "@material-ui/core/Grid";
 import Hidden from "@material-ui/core/Hidden";
@@ -54,10 +54,10 @@ const MainTemplate = ({
             <Grid item xs={12} sm={6} md={6} xl={6} lg={6}>
               <h2>About, Me</h2>
               <p className="portfolio_content">
-                안녕하세요, 저는 이찬행 이라고 합니다. <br /> 부트캠프 과정을
+                안녕하세요, 저는 이찬행 이라고 합니다. <br /> 부트캠프 과정을
                 통해 자바스크립트를 기본으로 하여 웹 전반에 대한 개발을
-                배웠습니다. 하드 스킬 뿐만 아니라, 협업을 통해 커뮤니케이션과
-                유연성등 의 소프트 스킬 또한 함양하였습니다. 애자일 & 스크럼
+                배웠습니다. 하드 스킬뿐만 아니라, 협업을 통해 커뮤니케이션과
+                유연성 등 의 소프트 스킬 또한 함양하였습니다. 애자일 & 스크럼
                 방식을 채택하여 프로젝트를 관리 및 진행하였습니다.
               </p>
             </Grid>
@@ -73,14 +73,11 @@ const MainTemplate = ({
           </Grid>
         </section>
 
-        <section ref={moveToExp} id="work">
-          <Grid className={classes.work} item xs={12}>
-            <h2>Where I've Worked & Experienced</h2>
-            {/* <ul>
-              <li> Code States</li>
-            </ul> */}
-          </Grid>
-        </section>
+        <section ref={moveToExp} id="work"></section>
+        <Grid className={classes.work} item xs={12}>
+          <h2>Worked & Experienced</h2>
+          <VerticalTabs />
+        </Grid>
 
         <section ref={moveToWork} id="project">
           <div id="project_title">

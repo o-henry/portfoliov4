@@ -1,0 +1,51 @@
+#link_style {
+  color: #193441 !important;
+  font-family: $sfmono, $scorelight !important;
+}
+
+.exp_title {
+  font-size: 1.5rem;
+  font-family: $baloo !important;
+}
+
+.exp_date {
+  padding: 20px 0;
+}
+
+.exp_content_style {
+  font-family: $sfmono, $scorelight !important;
+  line-height: 1.5rem;
+}
+
+.makeStyles-tab-11 {
+  justify-content: center;
+}
+
+ul {
+  display: block;
+  // list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+
+.list_before {
+  position: relative;
+}
+
+.list_before::before {
+  content: "▹";
+  left: 0;
+  position: absolute;
+  padding-right: 30px;
+  color: black;
+  box-sizing: inherit;
+}

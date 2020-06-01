@@ -46,12 +46,15 @@ const useStyles = makeStyles((theme: Theme) =>
       display: "flex",
       // minHeight: "100vh",
       flexDirection: "row",
-      padding: "150px 0 150px 0 !important",
+      padding: "270px 0 200px 0 !important",
     },
     work: {
       display: "flex",
       flexDirection: "column",
-      padding: "150px 0",
+      padding: "230px 0",
+      justifyContent: "center",
+      alignItems: "center",
+      width: "100%",
       // minHeight: "100vh",
     },
     gridList: {
@@ -69,6 +72,18 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     footer: {
       padding: "3rem",
+    },
+    tab: {
+      flexGrow: 1,
+      backgroundColor: theme.palette.background.paper,
+      display: "flex",
+      height: 174,
+      padding: "3rem 0",
+      // width: "100%",
+    },
+    tabs: {
+      borderRight: `1px solid ${theme.palette.divider}`,
+      minWidth: "24%",
     },
   })
 );
