@@ -1,5 +1,6 @@
 import React from "react";
 import { MainTemplate } from "@pages/index";
+import { projectList } from "@config/index";
 
 const Main = ({ moveToAbout, moveToExp, moveToWork, moveToContact }: any) => {
   return (
@@ -9,6 +10,7 @@ const Main = ({ moveToAbout, moveToExp, moveToWork, moveToContact }: any) => {
         moveToExp={moveToExp}
         moveToWork={moveToWork}
         moveToContact={moveToContact}
+        projectList={projectList}
       />
     </div>
   );

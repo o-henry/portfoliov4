@@ -63,7 +63,7 @@ const VerticalTabs = () => {
           Front End Developer &nbsp; <span id="link_style">@ Papaya</span>
         </div>
         <div className="exp_date">2020.02 - 2020.05</div>
-        <p className="exp_content_style">
+        <div className="exp_content_style">
           <div>
             <ul>
               <li className="list_before">
@@ -79,14 +79,14 @@ const VerticalTabs = () => {
               </li>
             </ul>
           </div>
-        </p>
+        </div>
       </TabPanel>
       <TabPanel value={value} index={1}>
         <div className="exp_title">
           Participant &nbsp; <span id="link_style">@ AWS 101 & 201</span>
         </div>
         <div className="exp_date">2019</div>
-        <p className="exp_content_style">
+        <div className="exp_content_style">
           <div>
             <ul>
               <li className="list_before">
@@ -95,7 +95,7 @@ const VerticalTabs = () => {
               </li>
             </ul>
           </div>
-        </p>
+        </div>
       </TabPanel>
       <TabPanel value={value} index={2}>
         <div className="exp_title">

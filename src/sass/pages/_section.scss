@@ -61,5 +61,10 @@
 .stack_list {
   display: flex;
   flex-direction: row;
-  width: 27rem;
+  // width: 27rem;
+}
+
+.stack_layout {
+  display: flex;
+  flex-direction: column;
 }

@@ -8,7 +8,8 @@
       "@static/*": ["src/static/*"],
       "@styles/*": ["src/styles/*"],
       "@stores/*": ["src/stores/*"],
-      "@utils/*": ["src/utils/*"]
+      "@utils/*": ["src/utils/*"],
+      "@config/*": ["src/config/*"]
     }
   }
 }
