@@ -55,7 +55,7 @@ const VerticalTabs = () => {
         className={classes.tabs}
       >
         <Tab label="Papaya" {...a11yProps(0)} />
-        <Tab label="AWS" {...a11yProps(1)} />
+        <Tab label="AWS Seminar" {...a11yProps(1)} />
         <Tab label="Code States" {...a11yProps(2)} />
       </Tabs>
       <TabPanel value={value} index={0}>
