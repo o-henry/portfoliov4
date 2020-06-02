@@ -16,15 +16,9 @@ function App() {
     setIsLoading(false);
   });
 
-  console.log("aaaa", isLoading);
   return (
     <>
       <Switch>
-        {isLoading && (
-          <div>
-            <Loader />
-          </div>
-        )}
         <Route exact path="/">
           <CustomMenu
             moveToAbout={moveToAbout}
