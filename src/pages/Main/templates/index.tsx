@@ -38,6 +38,11 @@ const MainTemplate = ({
       }
     >
       <Grid container>
+        {/* <img
+          src="http://hits.dwyl.com/o-henry/portfoliov4.svg"
+          alt="hit count image"
+        /> */}
+
         <Grid className={classes.intro} item xs={12}>
           <section id="intro">
             <h1 className="portfolio_header">Hi, I'm Chan Haeng Lee.</h1>

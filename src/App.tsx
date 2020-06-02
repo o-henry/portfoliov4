@@ -1,5 +1,5 @@
-import React, { createRef, useRef } from "react";
-import { Main, NotFound } from "@pages/index";
+import React, { useEffect, useState, createRef, useRef } from "react";
+import { Main, NotFound, Loader } from "@pages/index";
 import { CustomMenu, VerticalInfo } from "@components/index";
 import { Route, Switch } from "react-router-dom";
 import Headroom from "react-headroom";
@@ -10,9 +10,21 @@ function App() {
   const moveToWork = useRef();
   const moveToContact = useRef();
 
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setIsLoading(false);
+  });
+
+  console.log("aaaa", isLoading);
   return (
     <>
       <Switch>
+        {isLoading && (
+          <div>
+            <Loader />
+          </div>
+        )}
         <Route exact path="/">
           <CustomMenu
             moveToAbout={moveToAbout}
