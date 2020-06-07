@@ -113,11 +113,13 @@ const MainTemplate = ({
           <div id="project_title">
             <h2>My Project</h2>
           </div>
+
           <ProjectCard
             itemCount={itemCount}
             projectList={projectList}
             showMore={showMore}
           />
+
           <div id="project_btn">
             <CustomBtn id="more_button" isClicked={handleClick}>
               Show More

@@ -24,6 +24,7 @@
     "react-headroom": "^3.0.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
+    "react-transition-group": "^4.4.1",
     "typescript": "~3.7.2"
   },
   "scripts": {
@@ -48,6 +49,7 @@
     ]
   },
   "devDependencies": {
-    "@material-ui/icons": "^4.9.1"
+    "@material-ui/icons": "^4.9.1",
+    "@types/react-transition-group": "^4.4.0"
   }
 }
