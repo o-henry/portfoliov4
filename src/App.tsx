@@ -1,14 +1,19 @@
-import React, { useEffect, useState, createRef, useRef } from "react";
+import React, { useEffect, useState, useRef, Fragment } from "react";
 import { Main, NotFound, Loader } from "@pages/index";
 import { CustomMenu, VerticalInfo } from "@components/index";
 import { Route, Switch } from "react-router-dom";
-import Headroom from "react-headroom";
+import { useStore } from "@hooks/index";
+import { observer } from "mobx-react-lite";
+import classNames from "classnames/bind";
+import styles from "./sass/CSSModule.module.scss";
 
-function App() {
+const App = observer(() => {
   const moveToAbout = useRef();
   const moveToExp = useRef();
   const moveToWork = useRef();
   const moveToContact = useRef();
+  const { event } = useStore();
+  const cx = classNames.bind(styles);
 
   const [isLoading, setIsLoading] = useState(true);
 
@@ -17,7 +22,7 @@ function App() {
   });
 
   return (
-    <>
+    <div className={cx(event.isWelcomeClicked ? "have-fun" : "default")}>
       <Switch>
         <Route exact path="/">
           <CustomMenu
@@ -37,8 +42,8 @@ function App() {
           <NotFound header={"page not found"} />
         </Route>
       </Switch>
-    </>
+    </div>
   );
-}
+});
 
 export default App;

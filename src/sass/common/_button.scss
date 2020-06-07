@@ -1,6 +1,6 @@
 .btn_default_style {
   background: black !important;
-  color: white !important;
+  color: white;
   font-size: 0.8rem !important;
 }
 
@@ -26,6 +26,18 @@
 .MuiTab-textColorInherit.Mui-selected {
   background: black;
   color: white;
+}
+
+#dark_button {
+  padding: 0.8rem;
+  margin-top: 1rem;
+  background: black !important;
+  border: 1px solid black !important;
+  color: black !important;
+  &:hover {
+    background: black !important;
+    color: black !important;
+  }
 }
 
 #more_button {
@@ -62,4 +74,12 @@
   &:hover {
     color: red;
   }
+}
+
+#resume_btn {
+  color: white;
+}
+
+#hide_resume_btn {
+  color: black;
 }

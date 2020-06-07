@@ -3,14 +3,19 @@ import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import App from "./App";
 import "./sass/main.scss";
-
+import { Provider } from "mobx-react";
+import { EventStore } from "@stores/index";
 import * as serviceWorker from "./serviceWorker";
+
+const event = new EventStore();
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
-      <App />
-    </Router>
+    <Provider event={event}>
+      <Router>
+        <App />
+      </Router>
+    </Provider>
   </React.StrictMode>,
   document.getElementById("root")
 );
