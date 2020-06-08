@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useStyles } from "@styles/index";
 import { useWidth } from "@hooks/index";
-import { CustomBtn, ProjectCard, VerticalTabs } from "@components/index";
+import { CustomBtn, ProjectCard, VerticalTabs, Chat } from "@components/index";
 import { profile, github, blog } from "@static/index";
 import { useStore } from "@hooks/index";
 import { observer } from "mobx-react-lite";
@@ -45,7 +45,7 @@ const MainTemplate = observer(
           src="http://hits.dwyl.com/o-henry/portfoliov4.svg"
           alt="hit count image"
         /> */}
-
+          <Chat />
           <Grid className={classes.intro} item xs={12}>
             <section id="intro">
               <h1 className="portfolio_header">Hi, I'm Chan Haeng Lee.</h1>

@@ -16,7 +16,6 @@
     "@types/react-dom": "^16.9.0",
     "@types/react-headroom": "^2.2.1",
     "@types/react-router-dom": "^5.1.5",
-    "@types/react-slick": "^0.23.4",
     "classnames": "^2.2.6",
     "craco-alias": "^2.1.1",
     "mobx": "^5.15.4",
@@ -56,6 +55,7 @@
   "devDependencies": {
     "@material-ui/icons": "^4.9.1",
     "@types/classnames": "^2.2.10",
-    "@types/react-transition-group": "^4.4.0"
+    "@types/react-transition-group": "^4.4.0",
+    "@types/socket.io-client": "^1.4.33"
   }
 }
