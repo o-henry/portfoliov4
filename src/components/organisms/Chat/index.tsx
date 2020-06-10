@@ -4,34 +4,46 @@ import io from "socket.io-client";
 const socket = io.connect("http://localhost:8000");
 
 const Chat = () => {
-  const [msg, setMsg] = useState("");
   const [chat, setChat] = useState<any>([]);
+  const [inputs, setInputs] = useState({
+    msg: "",
+    nickname: "",
+  });
+
+  // const [msg, setMsg] = useState("");
+  // const [nickname, setNickname] = useState("");
+
+  const { msg, nickname } = inputs;
 
   useEffect(() => {
-    socket.on("chat message", ({ id, msg }: any) => {
-      console.log(id);
-      setChat([...chat, { id, msg }]);
+    socket.on("chat message", ({ nickname, msg }: any) => {
+      setChat([...chat, { nickname, msg }]);
     });
   });
 
   const onTextChange = (e: any) => {
-    setMsg(e.target.value);
+    const { value, name } = e.target;
+    setInputs({
+      ...inputs,
+      [name]: value,
+    });
   };
 
   const onMessageSubmit = () => {
-    socket.emit("chat message", { msg });
-    setMsg("");
+    socket.emit("chat message", { nickname, msg });
+    setInputs({
+      ...inputs,
+      [msg]: "",
+    });
   };
 
   const renderChat = () => {
     console.log("chat", chat);
-    return chat.map(({ id, msg }: any, idx: any) => {
+    return chat.map(({ nickname, msg }: any, idx: any) => {
       return (
         <div key={idx}>
-          <span style={{ color: "green" }}>
-            <h1>{id}: </h1>
-          </span>
-          <span>{msg}:</span>
+          <span style={{ color: "green" }}>{nickname}: </span>
+          <span>{msg}</span>
         </div>
       );
     });
@@ -39,7 +51,10 @@ const Chat = () => {
 
   return (
     <>
-      <input onChange={onTextChange} value={msg} />
+      <span>Nickname</span>
+      <input name="nickname" onChange={onTextChange} value={nickname} />
+      <span>Message</span>
+      <input name="msg" onChange={onTextChange} value={msg} />
       <button onClick={onMessageSubmit}>Send</button>
       <div>{renderChat()}</div>
     </>
