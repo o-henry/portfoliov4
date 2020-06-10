@@ -10,9 +10,6 @@ const Chat = () => {
     nickname: "",
   });
 
-  // const [msg, setMsg] = useState("");
-  // const [nickname, setNickname] = useState("");
-
   const { msg, nickname } = inputs;
 
   useEffect(() => {
@@ -20,6 +17,15 @@ const Chat = () => {
       setChat([...chat, { nickname, msg }]);
     });
   });
+
+  /*
+  리액트 상태에서 객체를 수정해야 할 때에는,
+
+    inputs[name] = value;
+    이런식으로 직접 수정하면 안됩니다.
+
+  그 대신에, 새로운 객체를 만들어서 새로운 객체에 변화를 주고, 이를 상태로 사용해주어야 합니다.
+  */
 
   const onTextChange = (e: any) => {
     const { value, name } = e.target;
@@ -62,53 +68,3 @@ const Chat = () => {
 };
 
 export default Chat;
-
-// import React, { useState, useEffect } from "react";
-// import io from "socket.io-client";
-
-// const Chat = () => {
-//   const [state, setState] = useState<any | undefined>({ msg: "", chat: [] });
-//   //   const [msg, setMsg] = useState("");
-//   const socket = io.connect("http://localhost:8000");
-
-//   useEffect(() => {
-//     socket.on("chat message", ({ id, msg }: any) => {
-//       setState({ chat: [...state.chat, { id, msg }] });
-//     });
-//   }, [state.chat]);
-
-//   const onTextChange = (e: any) => {
-//     setState({ msg: e.target.value });
-//     // setMsg(e.target.value);
-//   };
-
-//   const onMessageSubmit = () => {
-//     socket.emit("chat message", state.msg);
-//     setState({ msg: "" });
-//   };
-
-//   const renderChat = () => {
-//     const { chat } = state;
-//     console.log("avvava", state, state.chat);
-//     return Array.isArray(chat) && chat.length !== 0
-//       ? chat.map(({ id, msg }: any, idx: any) => {
-//           return (
-//             <div key={idx}>
-//               <span style={{ color: "green" }}>{id}: </span>
-//               <span>{msg}</span>
-//             </div>
-//           );
-//         })
-//       : "";
-//   };
-
-//   return (
-//     <>
-//       <input onChange={onTextChange} value={state.msg} />
-//       <button onClick={onMessageSubmit}>Send</button>
-//       <div>{renderChat()}</div>
-//     </>
-//   );
-// };
-
-// export default Chat;
