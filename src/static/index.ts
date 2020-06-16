@@ -1,19 +1,8 @@
-/* project Image */
-export { default as blink } from "./blink.png";
-export { default as blinker } from "./blinker.png";
-export { default as blinkerImg } from "./blinkerImg.png";
-export { default as cookie } from "./cookie.png";
-export { default as crunch } from "./crunch.png";
-export { default as local } from "./local.png";
-export { default as localsns } from "./localsns.png";
-export { default as papaya } from "./papaya.png";
-export { default as papayaland } from "./papayaland.png";
-export { default as papayaweb } from "./papayaweb.png";
-export { default as papayaweb2 } from "./papayaweb2.png";
-
 /* asset */
 export { default as profile } from "./profile.svg";
 export { default as blog } from "./blogger.svg";
 export { default as link } from "./out.svg";
+export { default as kakao } from "./kakao.svg";
+
 /* stack */
 export { default as github } from "./github.svg";

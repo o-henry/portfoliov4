@@ -67,7 +67,11 @@ const CustomMenu = observer(
     };
 
     return (
-      <section id="menuBar" className={classes.menu}>
+      <section
+        id="menuBar"
+        // className={!event.isWelcomeClicked ? classes.menu : classes.none}
+        className={classes.menu}
+      >
         <Grid container>
           <Grid item xs={12}>
             <Hidden only={["xs", "sm"]}>
@@ -95,11 +99,12 @@ const CustomMenu = observer(
                   </button>
                   <a href={pdf} target="_blank">
                     <CustomBtn
-                      id={
-                        event.isWelcomeClicked
-                          ? "hide_resume_btn"
-                          : "resume_btn"
-                      }
+                      // id={
+                      //   event.isWelcomeClicked
+                      //     ? "hide_resume_btn"
+                      //     : "resume_btn"
+                      // }
+                      id="resume_btn"
                       isClicked={handleClickOpen}
                     >
                       {"RESUME"}

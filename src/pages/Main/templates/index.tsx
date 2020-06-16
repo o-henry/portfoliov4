@@ -45,7 +45,7 @@ const MainTemplate = observer(
           src="http://hits.dwyl.com/o-henry/portfoliov4.svg"
           alt="hit count image"
         /> */}
-          <Chat />
+          {/* <Chat /> */}
           <Grid className={classes.intro} item xs={12}>
             <section id="intro">
               <h1 className="portfolio_header">Hi, I'm Chan Haeng Lee.</h1>
@@ -53,17 +53,19 @@ const MainTemplate = observer(
                 I'm a junior developer who loves collaboration and
                 communication.{" "}
               </p>
-              {/* <a
+              <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href="mailto:c.henry.9209@gmail.com"
-              > */}
-              <CustomBtn
-                id={event.isWelcomeClicked ? "dark_button" : "more_button"}
               >
-                {"Get In Touch"}
-              </CustomBtn>
-              {/* </a> */}
+                <CustomBtn
+                  // id={event.isWelcomeClicked ? "dark_button" : "more_button"}
+                  id="more_button"
+                  isClicked={handleOpenMail}
+                >
+                  {"Get In Touch"}
+                </CustomBtn>
+              </a>
             </section>
           </Grid>
 

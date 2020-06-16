@@ -9,13 +9,13 @@ export const projectList = [
     blog: "https://o-henry.github.io/2020/05/10/maboxgljs/",
   },
   {
-    name: "Crunch",
+    name: "Portfolio V2",
     description:
-      "크런치 프라이스 기업과 2인이 팀이 되어 협업한 프로젝트로, AWS Personalize를 활용하여 MD의 개입없이 인공지능으로 사용자 개개인 에게 맞는 상품 추천 시스템을 구현했습니다.",
-    stack: "Python AWS Airflow",
-    git: "",
-    youtube: "https://www.youtube.com/embed/tjxwqqM10Tk",
-    blog: "https://o-henry.github.io/2019/10/21/AWSPersonalize/",
+      "무료 디자인을 활용하여, 포트폴리오로 개발한 반응형 페이지 입니다. Firebase로 배포하였습니다.",
+    stack: "React MaterialUI Mobx Firebase",
+    git: "https://github.com/o-henry/portfolio3/",
+    youtube: "https://www.youtube.com/watch?v=ROwzXgsrH8g&feature=youtu.be",
+    blog: "",
   },
   {
     name: "Local",
@@ -27,21 +27,12 @@ export const projectList = [
     blog: "https://o-henry.github.io/2019/10/29/Insta/",
   },
   {
-    name: "Blinker",
+    name: "Devsisters Task",
     description:
-      "4인 팀 프로젝트로 진행된, Blinker는 openCV 기반 BRFV4 SDK를 사용하여 사용자의 Blink를 인식, 깜빡일 때 점프하는 웹 게임 입니다.",
-    stack: "React AWS",
-    git: "https://github.com/o-henry/Blinker_Client",
-    youtube: "https://www.youtube.com/embed/nv3lNBxKLmY",
-    blog: "",
-  },
-  {
-    name: "Portfolio V2",
-    description:
-      "무료 디자인을 활용하여, 포트폴리오로 개발한 반응형 페이지 입니다. Firebase로 배포하였습니다.",
-    stack: "React MaterialUI Mobx Firebase",
-    git: "https://github.com/o-henry/portfolio3/",
-    youtube: "https://www.youtube.com/watch?v=ROwzXgsrH8g&feature=youtu.be",
+      "쿠키런 과제 페이지 입니다. 아토믹 디자인 패턴을 적용하여 코드를 구성하였습니다. 타입스크립트 기반으로, Apollo hook을 사용했습니다.",
+    git: "https://github.com/o-henry/Cookie_Run_Project",
+    youtube: "https://www.youtube.com/embed/vV-hFzdlYyU",
+    stack: "React TS Graphql SCSS",
     blog: "",
   },
   {
@@ -54,12 +45,21 @@ export const projectList = [
     blog: "",
   },
   {
-    name: "Devsisters Task",
+    name: "Crunch",
     description:
-      "쿠키런 과제 페이지 입니다. 아토믹 디자인 패턴을 적용하여 코드를 구성하였습니다. 타입스크립트 기반으로, Apollo hook을 사용했습니다.",
-    git: "https://github.com/o-henry/Cookie_Run_Project",
-    youtube: "https://www.youtube.com/embed/vV-hFzdlYyU",
-    stack: "React TS Graphql SCSS",
+      "크런치 프라이스 기업과 2인이 팀이 되어 협업한 프로젝트로, AWS Personalize를 활용하여 MD의 개입없이 인공지능으로 사용자 개개인 에게 맞는 상품 추천 시스템을 구현했습니다.",
+    stack: "Python AWS Airflow",
+    git: "",
+    youtube: "https://www.youtube.com/embed/tjxwqqM10Tk",
+    blog: "https://o-henry.github.io/2019/10/21/AWSPersonalize/",
+  },
+  {
+    name: "Blinker",
+    description:
+      "4인 팀 프로젝트로 진행된, Blinker는 openCV 기반 BRFV4 SDK를 사용하여 사용자의 Blink를 인식, 깜빡일 때 점프하는 웹 게임 입니다.",
+    stack: "React AWS",
+    git: "https://github.com/o-henry/Blinker_Client",
+    youtube: "https://www.youtube.com/embed/nv3lNBxKLmY",
     blog: "",
   },
   {

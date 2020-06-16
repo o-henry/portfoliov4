@@ -32,6 +32,13 @@ const useStyles = makeStyles((theme: Theme) =>
       alignItems: "center",
       fontSize: "0.8rem",
     },
+    none: {
+      width: "100%",
+      height: "6rem",
+      display: "none",
+      alignItems: "center",
+      fontSize: "0.8rem",
+    },
     intro: {
       display: "flex",
       justifyContent: "center",

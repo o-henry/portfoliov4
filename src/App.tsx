@@ -6,6 +6,7 @@ import { useStore } from "@hooks/index";
 import { observer } from "mobx-react-lite";
 import classNames from "classnames/bind";
 import styles from "./sass/CSSModule.module.scss";
+import { Helmet } from "react-helmet";
 
 const App = observer(() => {
   const moveToAbout = useRef();
@@ -22,7 +23,11 @@ const App = observer(() => {
   });
 
   return (
-    <div className={cx(event.isWelcomeClicked ? "have-fun" : "default")}>
+    // <div className={cx(event.isWelcomeClicked ? "have-fun" : "default")}>
+    <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+      </Helmet>
       <Switch>
         <Route exact path="/">
           <CustomMenu

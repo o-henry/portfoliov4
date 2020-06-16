@@ -55,7 +55,10 @@
   "devDependencies": {
     "@material-ui/icons": "^4.9.1",
     "@types/classnames": "^2.2.10",
+    "@types/react-helmet": "^6.0.0",
     "@types/react-transition-group": "^4.4.0",
-    "@types/socket.io-client": "^1.4.33"
+    "@types/socket.io-client": "^1.4.33",
+    "axios": "^0.19.2",
+    "react-helmet": "^6.1.0"
   }
 }
