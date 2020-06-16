@@ -25,9 +25,9 @@ const App = observer(() => {
   return (
     // <div className={cx(event.isWelcomeClicked ? "have-fun" : "default")}>
     <div>
-      <Helmet>
+      {/* <Helmet>
         <meta charSet="utf-8" />
-      </Helmet>
+      </Helmet> */}
       <Switch>
         <Route exact path="/">
           <CustomMenu
