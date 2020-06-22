@@ -28,14 +28,14 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "react-transition-group": "^4.4.1",
-    "socket.io-client": "^2.3.0",
     "typescript": "~3.7.2"
   },
   "scripts": {
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "public": "build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -55,8 +55,6 @@
   "devDependencies": {
     "@material-ui/icons": "^4.9.1",
     "@types/classnames": "^2.2.10",
-    "@types/react-transition-group": "^4.4.0",
-    "@types/socket.io-client": "^1.4.33",
-    "axios": "^0.19.2"
+    "@types/react-transition-group": "^4.4.0"
   }
 }
