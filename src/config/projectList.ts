@@ -3,7 +3,7 @@ export const projectList = [
     name: "Papaya",
     description:
       "리액트 기반 반응형 SPA 로, Mapbox를 기반으로 한, 실내 측위 서비스 입니다. Apollo Subscription을 통한 실시간 위치 공유기능이 추가되었습니다.",
-    stack: "React Mapbox Graphql AWS",
+    stack: "React Sass Mapbox Graphql AWS",
     git: "",
     youtube: "https://www.youtube.com/embed/s5gBXg1zrHY",
     blog: "https://o-henry.github.io/2020/05/10/maboxgljs/",
@@ -12,9 +12,18 @@ export const projectList = [
     name: "Portfolio V2",
     description:
       "무료 디자인을 활용하여, 포트폴리오로 개발한 반응형 페이지 입니다. Firebase로 배포하였습니다.",
-    stack: "React MaterialUI Mobx Firebase",
+    stack: "React Sass MaterialUI Mobx Firebase",
     git: "https://github.com/o-henry/portfolio3/",
     youtube: "https://www.youtube.com/watch?v=ROwzXgsrH8g&feature=youtu.be",
+    blog: "",
+  },
+  {
+    name: "Random Chatting",
+    description:
+      "socket.io를 활용하여 만든 랜덤 채팅 앱 입니다. Server는 Heroku / Client는 Firebase로 배포하였습니다.",
+    stack: "React Express Socket.io Heroku",
+    git: "https://github.com/o-henry/real-chat-socket",
+    youtube: "https://random-chat-4a745.web.app/",
     blog: "",
   },
   {
@@ -32,7 +41,7 @@ export const projectList = [
       "쿠키런 과제 페이지 입니다. 아토믹 디자인 패턴을 적용하여 코드를 구성하였습니다. 타입스크립트 기반으로, Apollo hook을 사용했습니다.",
     git: "https://github.com/o-henry/Cookie_Run_Project",
     youtube: "https://www.youtube.com/embed/vV-hFzdlYyU",
-    stack: "React TS Graphql SCSS",
+    stack: "React TS Graphql Sass",
     blog: "",
   },
   {
@@ -41,7 +50,7 @@ export const projectList = [
       "Papaya 랜딩 페이지 입니다. 리액트 와 SCSS 를 사용하여 반응형 웹을 구현했으며, i18n을 활용하여 다국어 처리를 했습니다. AWS EC2에 배포했습니다.",
     git: "https://github.com/o-henry/Papaya_Landing_V2",
     youtube: "https://www.papayamap.io/",
-    stack: "React AWS i18N SCSS",
+    stack: "React AWS i18N Sass",
     blog: "",
   },
   {
@@ -57,7 +66,7 @@ export const projectList = [
     name: "Blinker",
     description:
       "4인 팀 프로젝트로 진행된, Blinker는 openCV 기반 BRFV4 SDK를 사용하여 사용자의 Blink를 인식, 깜빡일 때 점프하는 웹 게임 입니다.",
-    stack: "React AWS",
+    stack: "React AWS HTML CSS",
     git: "https://github.com/o-henry/Blinker_Client",
     youtube: "https://www.youtube.com/embed/nv3lNBxKLmY",
     blog: "",
@@ -67,7 +76,7 @@ export const projectList = [
     description: "포트폴리오 입니다.",
     git: "https://github.com/o-henry/portfolio-v2",
     youtube: "https://www.youtube.com/embed/UG7DOlp9WE4",
-    stack: "React",
+    stack: "React Sass",
     blog: "",
   },
 ];
