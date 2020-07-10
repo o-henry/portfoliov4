@@ -17,7 +17,7 @@ const MainTemplate = observer(
     const [open, setOpen] = useState(false);
     const { event } = useStore();
 
-    // console.log("width", width);
+    console.log("width", width);
 
     const handleClick = () => {
       setShowMore(true);

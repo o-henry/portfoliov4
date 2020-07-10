@@ -32,7 +32,7 @@ const ProjectCard = ({ itemCount, projectList, showMore }: any) => {
                     width == "xs"
                       ? 2
                       : width == "sm" || width == "md"
-                      ? 0.9
+                      ? 1
                       : 0.66
                   }
                 >

@@ -1,5 +1,14 @@
 export const projectList = [
   {
+    name: "PV Calorie",
+    description:
+      "사용자에게 섭취한 음식의 당 수치 와 칼로리 수치를 제공하는 웹 어플리케이션을 제작중에 있습니다. 음성 인식 API를 활용하여, 음성을 전달받아 해당 칼로리와 당수치를 제공합니다.",
+    stack: "React Express Mysql Sass TS",
+    git: "https://github.com/o-henry/PV_REST",
+    youtube: "",
+    blog: "",
+  },
+  {
     name: "Papaya",
     description:
       "리액트 기반 반응형 SPA 로, Mapbox를 기반으로 한, 실내 측위 서비스 입니다. Apollo Subscription을 통한 실시간 위치 공유기능이 추가되었습니다.",
@@ -8,6 +17,7 @@ export const projectList = [
     youtube: "https://www.youtube.com/embed/s5gBXg1zrHY",
     blog: "https://o-henry.github.io/2020/05/10/maboxgljs/",
   },
+
   {
     name: "Portfolio V2",
     description:
@@ -20,8 +30,8 @@ export const projectList = [
   {
     name: "Random Chatting",
     description:
-      "socket.io를 활용하여 만든 랜덤 채팅 앱 입니다. Server는 Heroku / Client는 Firebase로 배포하였습니다.",
-    stack: "React Express Socket.io Heroku",
+      "socket.io를 활용하여 만든 간단한 랜덤 채팅 앱 입니다. Server는 Heroku / Client는 Firebase로 배포하였습니다.",
+    stack: "React Express Socket.io Heroku TS",
     git: "https://github.com/o-henry/real-chat-socket",
     youtube: "https://random-chat-4a745.web.app/",
     blog: "",
