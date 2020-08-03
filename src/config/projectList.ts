@@ -17,16 +17,6 @@ export const projectList = [
     youtube: "https://www.youtube.com/embed/s5gBXg1zrHY",
     blog: "https://o-henry.github.io/2020/05/10/maboxgljs/",
   },
-
-  {
-    name: "Portfolio V2",
-    description:
-      "무료 디자인을 활용하여, 포트폴리오로 개발한 반응형 페이지 입니다. Firebase로 배포하였습니다.",
-    stack: "React Sass MaterialUI Mobx Firebase",
-    git: "https://github.com/o-henry/portfolio3/",
-    youtube: "https://www.youtube.com/watch?v=ROwzXgsrH8g&feature=youtu.be",
-    blog: "",
-  },
   {
     name: "Random Chatting",
     description:
@@ -36,6 +26,16 @@ export const projectList = [
     youtube: "https://random-chat-4a745.web.app/",
     blog: "",
   },
+  {
+    name: "Portfolio V2",
+    description:
+      "무료 디자인을 활용하여, 포트폴리오로 개발한 반응형 페이지 입니다. Firebase로 배포하였습니다.",
+    stack: "React Sass MaterialUI Mobx Firebase",
+    git: "https://github.com/o-henry/portfolio3/",
+    youtube: "https://www.youtube.com/watch?v=ROwzXgsrH8g&feature=youtu.be",
+    blog: "",
+  },
+
   {
     name: "Local",
     description:
