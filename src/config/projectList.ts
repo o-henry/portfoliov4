@@ -1,11 +1,11 @@
 export const projectList = [
   {
-    name: "PV Calorie",
+    name: "Hunger",
     description:
       "사용자에게 섭취한 음식의 당 수치 와 칼로리 수치를 제공하는 웹 어플리케이션을 제작중에 있습니다. 음성 인식 API를 활용하여, 음성을 전달받아 해당 칼로리와 당수치를 제공합니다.",
     stack: "React Express Mysql Sass TS",
     git: "https://github.com/o-henry/PV_REST",
-    youtube: "",
+    youtube: "https://youtu.be/GxhjbaaKlew",
     blog: "",
   },
   {
