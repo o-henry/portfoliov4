@@ -25,7 +25,7 @@ const Transition = React.forwardRef(function Transition(
   return <Slide direction="left" ref={ref} {...props} />;
 });
 
-const pdf = require("../../../Chan Haeng Lee Resume.pdf");
+const pdf = require("../../../Chan Haeng Lee.pdf");
 
 const CustomMenu = observer(
   ({ moveToAbout, moveToExp, moveToWork, moveToContact }: any) => {

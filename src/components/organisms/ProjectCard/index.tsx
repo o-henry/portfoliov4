@@ -1,5 +1,5 @@
 import React from "react";
-import { github, link, blog } from "@static/index";
+import { github, link, blog, google, apple } from "@static/index";
 import { useStyles } from "@styles/index";
 import { useWidth } from "@hooks/index";
 import GridList from "@material-ui/core/GridList";
@@ -23,6 +23,8 @@ const ProjectCard = ({ itemCount, projectList, showMore }: any) => {
               blog: string | undefined;
               description: React.ReactNode;
               stack: React.ReactNode;
+              apple: string | undefined;
+              google: string | undefined;
             }) => {
               return (
                 <GridListTile
@@ -73,6 +75,32 @@ const ProjectCard = ({ itemCount, projectList, showMore }: any) => {
                                 className="stack_icon_style"
                                 src={blog}
                                 alt="blog"
+                              />
+                            </a>
+                          </div>
+                        ) : (
+                          ""
+                        )}
+                        {project.apple !== "" ? (
+                          <div className="projectcard_img">
+                            <a target="_blank" href={project.apple}>
+                              <img
+                                className="stack_icon_style"
+                                src={apple}
+                                alt="apple app"
+                              />
+                            </a>
+                          </div>
+                        ) : (
+                          ""
+                        )}
+                        {project.google !== "" ? (
+                          <div className="projectcard_img">
+                            <a target="_blank" href={project.google}>
+                              <img
+                                className="stack_icon_style"
+                                src={google}
+                                alt="google app"
                               />
                             </a>
                           </div>

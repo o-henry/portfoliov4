@@ -2,10 +2,12 @@ export const projectList = [
   {
     name: "Hunger",
     description:
-      "사용자에게 섭취한 음식의 당 수치 와 칼로리 수치를 제공하는 웹 어플리케이션을 제작중에 있습니다. 음성 인식 API를 활용하여, 음성을 전달받아 해당 칼로리와 당수치를 제공합니다.",
-    stack: "React Express Mysql Sass TS",
-    git: "https://github.com/o-henry/PV_REST",
-    youtube: "https://youtu.be/GxhjbaaKlew",
+      "사용자에게 섭취한 음식의 당, 칼로리, 나트륨 등의 수치를 제공하는 앱 입니다. 음성 인식 API를 활용하여, 음성을 전달받아 해당 데이터를 제공합니다.",
+    stack: "RN Express Mysql TS TypeORM",
+    git: "",
+    youtube: "",
+    apple: "https://apps.apple.com/kr/app/hunger/id1534889596",
+    google: "https://play.google.com/store/apps/details?id=com.hunger.ohenry",
     blog: "",
   },
   {
@@ -14,6 +16,8 @@ export const projectList = [
       "리액트 기반 반응형 SPA 로, Mapbox를 기반으로 한, 실내 측위 서비스 입니다. Apollo Subscription을 통한 실시간 위치 공유기능이 추가되었습니다.",
     stack: "React Sass Mapbox Graphql AWS",
     git: "",
+    apple: "",
+    google: "",
     youtube: "https://www.youtube.com/embed/s5gBXg1zrHY",
     blog: "https://o-henry.github.io/2020/05/10/maboxgljs/",
   },
@@ -25,6 +29,8 @@ export const projectList = [
     git: "https://github.com/o-henry/real-chat-socket",
     youtube: "https://random-chat-4a745.web.app/",
     blog: "",
+    apple: "",
+    google: "",
   },
   {
     name: "Portfolio V2",
@@ -34,6 +40,8 @@ export const projectList = [
     git: "https://github.com/o-henry/portfolio3/",
     youtube: "https://www.youtube.com/watch?v=ROwzXgsrH8g&feature=youtu.be",
     blog: "",
+    apple: "",
+    google: "",
   },
 
   {
@@ -44,6 +52,8 @@ export const projectList = [
     git: "https://github.com/o-henry/local-server-v2",
     youtube: "https://www.youtube.com/embed/LkqD32oWN20",
     blog: "https://o-henry.github.io/2019/10/29/Insta/",
+    apple: "",
+    google: "",
   },
   {
     name: "Devsisters Task",
@@ -53,6 +63,8 @@ export const projectList = [
     youtube: "https://www.youtube.com/embed/vV-hFzdlYyU",
     stack: "React TS Graphql Sass",
     blog: "",
+    apple: "",
+    google: "",
   },
   {
     name: "Papaya landing page",
@@ -62,6 +74,8 @@ export const projectList = [
     youtube: "https://www.papayamap.io/",
     stack: "React AWS i18N Sass",
     blog: "",
+    apple: "",
+    google: "",
   },
   {
     name: "Crunch",
@@ -71,6 +85,8 @@ export const projectList = [
     git: "",
     youtube: "https://www.youtube.com/embed/tjxwqqM10Tk",
     blog: "https://o-henry.github.io/2019/10/21/AWSPersonalize/",
+    apple: "",
+    google: "",
   },
   {
     name: "Blinker",
@@ -80,6 +96,8 @@ export const projectList = [
     git: "https://github.com/o-henry/Blinker_Client",
     youtube: "https://www.youtube.com/embed/nv3lNBxKLmY",
     blog: "",
+    apple: "",
+    google: "",
   },
   {
     name: "Portfolio V1",
@@ -88,5 +106,7 @@ export const projectList = [
     youtube: "https://www.youtube.com/embed/UG7DOlp9WE4",
     stack: "React Sass",
     blog: "",
+    apple: "",
+    google: "",
   },
 ];
