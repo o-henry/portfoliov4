@@ -82,15 +82,15 @@ const MainTemplate = observer(
                   방식을 채택하여 프로젝트를 관리 및 진행하였습니다.
                   <ul className="stack_layout">
                     <div className="stack_list">
-                      <li className="list_before">JS(ES6+)</li>
+                      <li className="list_before">JS(ES6+) / TS</li>
                       <li className="list_before">HTML CSS/SCSS</li>
                     </div>
                     <div className="stack_list">
-                      <li className="list_before">React</li>
+                      <li className="list_before">React / RN</li>
                       <li className="list_before">Node.js</li>
                     </div>
                     <div className="stack_list">
-                      <li className="list_before">MongoDB</li>
+                      <li className="list_before">MongoDB / Mysql</li>
                       <li className="list_before">Graphql</li>
                     </div>
                   </ul>
