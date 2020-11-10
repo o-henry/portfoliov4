@@ -4,7 +4,7 @@ export const projectList = [
     description:
       "사용자에게 섭취한 음식의 당, 칼로리, 나트륨 등의 수치를 제공하는 앱 입니다. 음성 인식 API를 활용하여, 음성을 전달받아 해당 데이터를 제공합니다.",
     stack: "RN Express Mysql TS TypeORM",
-    git: "",
+    git: "https://github.com/o-henry/PV_REST",
     youtube: "",
     apple: "https://apps.apple.com/kr/app/hunger/id1534889596",
     google: "https://play.google.com/store/apps/details?id=com.hunger.ohenry",
