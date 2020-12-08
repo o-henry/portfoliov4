@@ -1,5 +1,16 @@
 export const projectList = [
   {
+    name: "오늘의 집",
+    description:
+      "오늘의 집 과제 페이지 입니다. 북마크 및 인피니티 스크롤을 구현했습니다.",
+    stack: "React Sass TS",
+    git: "https://github.com/o-henry/Ohouse_Front_Task",
+    youtube: "https://youtu.be/L5u7KgX1P4o",
+    blog: "",
+    apple: "",
+    google: "",
+  },
+  {
     name: "Hunger",
     description:
       "사용자에게 섭취한 음식의 당, 칼로리, 나트륨 등의 수치를 제공하는 앱 입니다. 음성 인식 API를 활용하여, 음성을 전달받아 해당 데이터를 제공합니다.",
@@ -24,7 +35,7 @@ export const projectList = [
   {
     name: "Random Chatting",
     description:
-      "socket.io를 활용하여 만든 간단한 랜덤 채팅 앱 입니다. Server는 Heroku / Client는 Firebase로 배포하였습니다.",
+      "socket.io를 활용하여 만든 간단한 랜덤 채팅 앱 입니다. Server는 Heroku / Client는 Firebase로 배포하였습니다. (테스트를 위해서 2개의 브라우저를 사용하셔서 접속 하셔야 합니다. 한글만 입력 가능합니다.)",
     stack: "React Express Socket.io Heroku TS",
     git: "https://github.com/o-henry/real-chat-socket",
     youtube: "https://random-chat-4a745.web.app/",
